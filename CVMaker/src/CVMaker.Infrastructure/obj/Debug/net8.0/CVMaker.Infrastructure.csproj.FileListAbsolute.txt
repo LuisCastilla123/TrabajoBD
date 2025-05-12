@@ -1,0 +1,17 @@
+C:\Users\Admin\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.Infrastructure.deps.json
+C:\Users\Admin\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.Infrastructure.runtimeconfig.json
+C:\Users\Admin\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.Infrastructure.dll
+C:\Users\Admin\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.Infrastructure.pdb
+C:\Users\Admin\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.Domain.dll
+C:\Users\Admin\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.Domain.pdb
+C:\Users\Admin\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\CVMaker.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Admin\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\CVMaker.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\CVMaker.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Admin\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\CVMaker.Infrastructure.AssemblyInfo.cs
+C:\Users\Admin\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\CVMaker.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Admin\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\CVMaker..433D8606.Up2Date
+C:\Users\Admin\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\CVMaker.Infrastructure.dll
+C:\Users\Admin\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\refint\CVMaker.Infrastructure.dll
+C:\Users\Admin\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\CVMaker.Infrastructure.pdb
+C:\Users\Admin\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\CVMaker.Infrastructure.genruntimeconfig.cache
+C:\Users\Admin\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\ref\CVMaker.Infrastructure.dll

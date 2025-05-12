@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{62DA95B2-C78B-45A3-BE8B-7BE85445D7D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CVMaker.Domain", "src\CVMaker.Domain\CVMaker.Domain.csproj", "{1DF9DB70-7474-49F1-910B-04EE0BAC7E84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CVMaker.Infrastructure", "src\CVMaker.Infrastructure\CVMaker.Infrastructure.csproj", "{6F450E78-9759-41CE-B485-5D5122FA96C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DF9DB70-7474-49F1-910B-04EE0BAC7E84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DF9DB70-7474-49F1-910B-04EE0BAC7E84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DF9DB70-7474-49F1-910B-04EE0BAC7E84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DF9DB70-7474-49F1-910B-04EE0BAC7E84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F450E78-9759-41CE-B485-5D5122FA96C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F450E78-9759-41CE-B485-5D5122FA96C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F450E78-9759-41CE-B485-5D5122FA96C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F450E78-9759-41CE-B485-5D5122FA96C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1DF9DB70-7474-49F1-910B-04EE0BAC7E84} = {62DA95B2-C78B-45A3-BE8B-7BE85445D7D2}
+		{6F450E78-9759-41CE-B485-5D5122FA96C9} = {62DA95B2-C78B-45A3-BE8B-7BE85445D7D2}
+	EndGlobalSection
+EndGlobal

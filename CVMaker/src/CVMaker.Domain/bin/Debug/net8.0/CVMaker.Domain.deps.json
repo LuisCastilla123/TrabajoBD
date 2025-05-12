@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CVMaker.Domain/1.0.0": {
+        "runtime": {
+          "CVMaker.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CVMaker.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
