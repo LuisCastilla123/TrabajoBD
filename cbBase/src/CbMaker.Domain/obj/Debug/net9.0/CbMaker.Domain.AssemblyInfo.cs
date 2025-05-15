@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CbMaker.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e50900f69c9b8c80cc7e16d74a630f6b7e029111")]
 [assembly: System.Reflection.AssemblyProductAttribute("CbMaker.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CbMaker.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

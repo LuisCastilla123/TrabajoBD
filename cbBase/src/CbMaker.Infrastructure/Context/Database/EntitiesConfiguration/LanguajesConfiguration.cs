@@ -35,6 +35,9 @@ namespace CbMaker.Infrastructure.Context.EntitiesConfiguration
             builder.Property(e => e.UpdatedAt)
                    .HasColumnType("datetime2")
                    .HasColumnName("updated_at");
+
+                 
+
         }
     }
 }
