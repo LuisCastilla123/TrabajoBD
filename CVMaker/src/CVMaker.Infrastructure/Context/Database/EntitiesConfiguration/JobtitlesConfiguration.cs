@@ -42,7 +42,17 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
             .HasForeignKey(ah => ah.JobTitleId)
             .OnDelete(DeleteBehavior.ClientSetNull);
 
-
+            builder.HasData([
+    new JobTitles {JobTitleId=1, Description = "Desarrollador de sistemas" },
+    new JobTitles {JobTitleId=2, Description = "Analista de compras" },
+    new JobTitles {JobTitleId=3, Description = "Gerente de Mercado" },
+    new JobTitles {JobTitleId=4, Description = "Director de Planta" },
+    new JobTitles {JobTitleId=5, Description = "Coordinador de Produccion" },
+    new JobTitles {JobTitleId=6, Description = "Asistente Personal" },
+    new JobTitles {JobTitleId=7, Description = "Consultar de Sistemas" },
+    new JobTitles {JobTitleId=8, Description = "Arquitecto" },
+    new JobTitles {JobTitleId=9, Description = "Ingeniero electrico" },
+]);
 
 
         }

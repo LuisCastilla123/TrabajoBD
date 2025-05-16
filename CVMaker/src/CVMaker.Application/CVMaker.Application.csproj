@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+<ItemGroup>
+<packageReference Include="Dapper" Version="2.1.66"/>
+<packageReference Include="FluentValidation" Version="11.11.0"/>
+<packageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0"/>
+<packageReference Include="MediatR" Version="12.4.1"/>
+<packageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0"/>
+<packageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.0"/>
+<packageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="9.0.0"/>
+<packageReference Include="Serilog" Version="4.2.0"/>
+</ItemGroup>
+
+<ItemGroup>
+ <ProjectReference Include="..\CVMaker.Domain\CVMaker.Domain.csproj" />
+</ItemGroup>
+</Project>

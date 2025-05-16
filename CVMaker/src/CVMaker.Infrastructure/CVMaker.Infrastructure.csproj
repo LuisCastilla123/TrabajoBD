@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CVMaker.Domain\CVMaker.Domain.csproj" />
+    <ProjectReference Include="..\CVMaker.Application\CVMaker.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>

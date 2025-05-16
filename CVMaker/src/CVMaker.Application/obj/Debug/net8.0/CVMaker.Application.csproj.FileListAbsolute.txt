@@ -1,0 +1,6 @@
+C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Application\obj\Debug\net8.0\CVMaker.Application.csproj.AssemblyReference.cache
+C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Application\obj\Debug\net8.0\CVMaker.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Application\obj\Debug\net8.0\CVMaker.Application.AssemblyInfoInputs.cache
+C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Application\obj\Debug\net8.0\CVMaker.Application.AssemblyInfo.cs
+C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Application\obj\Debug\net8.0\CVMaker.Application.csproj.CoreCompileInputs.cache
+C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Application\obj\Debug\net8.0\CVMaker.Application.sourcelink.json

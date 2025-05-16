@@ -42,6 +42,14 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
             .WithOne(ah => ah.Languages)
             .HasForeignKey(ah => ah.LanguageId)
             .OnDelete(DeleteBehavior.ClientSetNull);
+
+            builder.HasData([
+                new Language{languageId =1, description = "Espanol"},
+                new Language{languageId =2, description = "Ingles"}, 
+                new Language{languageId =3, description = "Frances"},
+                new Language{languageId =4, description = "Almenan"},
+                new Language{languageId =5, description = "Italiano"},     
+            ]);
         }
     }
 }

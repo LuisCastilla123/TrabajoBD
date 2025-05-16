@@ -47,7 +47,13 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
             .HasForeignKey(ah => ah.DegreeId)
             .OnDelete(DeleteBehavior.ClientSetNull);
             
-                 
+            builder.HasData([
+                new Degrees{DegreeId =1, Description = "Primaria" },
+                new Degrees{DegreeId =2, Description = "Secundaria" },
+                new Degrees{DegreeId =3, Description = "Universidad" },
+                new Degrees{DegreeId =4, Description = "Maestria" },
+                new Degrees{DegreeId =5, Description = "Doctorado" },
+            ]);    
 
         }
     }

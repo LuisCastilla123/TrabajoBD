@@ -57,6 +57,78 @@ namespace CVMaker.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("tb_academic_fields", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            AcademicFieldsID = 1L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Ciencias Sociales",
+                            ExternalID = new Guid("00000000-0000-0000-0000-000000000000")
+                        },
+                        new
+                        {
+                            AcademicFieldsID = 2L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Ciencias Naturales",
+                            ExternalID = new Guid("00000000-0000-0000-0000-000000000000")
+                        },
+                        new
+                        {
+                            AcademicFieldsID = 3L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Matematicas",
+                            ExternalID = new Guid("00000000-0000-0000-0000-000000000000")
+                        },
+                        new
+                        {
+                            AcademicFieldsID = 4L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Ingeneria",
+                            ExternalID = new Guid("00000000-0000-0000-0000-000000000000")
+                        },
+                        new
+                        {
+                            AcademicFieldsID = 5L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Tecnologia de la Informacion",
+                            ExternalID = new Guid("00000000-0000-0000-0000-000000000000")
+                        },
+                        new
+                        {
+                            AcademicFieldsID = 6L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Ciencias de la Salud",
+                            ExternalID = new Guid("00000000-0000-0000-0000-000000000000")
+                        },
+                        new
+                        {
+                            AcademicFieldsID = 7L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Ciencias de la Educacion",
+                            ExternalID = new Guid("00000000-0000-0000-0000-000000000000")
+                        },
+                        new
+                        {
+                            AcademicFieldsID = 8L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Artes",
+                            ExternalID = new Guid("00000000-0000-0000-0000-000000000000")
+                        },
+                        new
+                        {
+                            AcademicFieldsID = 9L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Ciencias Economicas",
+                            ExternalID = new Guid("00000000-0000-0000-0000-000000000000")
+                        },
+                        new
+                        {
+                            AcademicFieldsID = 10L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Ciencias Politicas",
+                            ExternalID = new Guid("00000000-0000-0000-0000-000000000000")
+                        });
                 });
 
             modelBuilder.Entity("CVMaker.Domain.Entities.AcademicHistory", b =>
@@ -165,6 +237,48 @@ namespace CVMaker.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("tb_degrees", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            DegreeId = 1L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Primaria",
+                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            DegreeId = 2L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Secundaria",
+                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            DegreeId = 3L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Universidad",
+                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            DegreeId = 4L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Maestria",
+                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            DegreeId = 5L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Doctorado",
+                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
                 });
 
             modelBuilder.Entity("CVMaker.Domain.Entities.JobTitles", b =>
@@ -203,6 +317,80 @@ namespace CVMaker.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("tb_job_titles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            JobTitleId = 1L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Desarrollador de sistemas",
+                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            JobTitleId = 2L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Analista de compras",
+                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            JobTitleId = 3L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Gerente de Mercado",
+                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            JobTitleId = 4L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Director de Planta",
+                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            JobTitleId = 5L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Coordinador de Produccion",
+                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            JobTitleId = 6L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Asistente Personal",
+                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            JobTitleId = 7L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Consultar de Sistemas",
+                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            JobTitleId = 8L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Arquitecto",
+                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            JobTitleId = 9L,
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Ingeniero electrico",
+                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
                 });
 
             modelBuilder.Entity("CVMaker.Domain.Entities.Language", b =>
@@ -241,6 +429,48 @@ namespace CVMaker.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("tb_languages", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            languageId = 1L,
+                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            createdAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            description = "Espanol",
+                            updatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            languageId = 2L,
+                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            createdAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            description = "Ingles",
+                            updatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            languageId = 3L,
+                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            createdAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            description = "Frances",
+                            updatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            languageId = 4L,
+                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            createdAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            description = "Almenan",
+                            updatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        },
+                        new
+                        {
+                            languageId = 5L,
+                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            createdAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            description = "Italiano",
+                            updatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
                 });
 
             modelBuilder.Entity("CVMaker.Domain.Entities.Skills", b =>
