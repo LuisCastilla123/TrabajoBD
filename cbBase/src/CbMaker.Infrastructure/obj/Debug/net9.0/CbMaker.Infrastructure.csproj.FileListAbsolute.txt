@@ -35,3 +35,7 @@ C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Infrastructure\obj\Debu
 C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Infrastructure\obj\Debug\net9.0\CbMaker.Infrastructure.pdb
 C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Infrastructure\obj\Debug\net9.0\CbMaker.Infrastructure.genruntimeconfig.cache
 C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Infrastructure\obj\Debug\net9.0\ref\CbMaker.Infrastructure.dll
+C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Infrastructure\bin\Debug\net9.0\CbMaker.Application.dll
+C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Infrastructure\bin\Debug\net9.0\CbMaker.SharedKernel.dll
+C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Infrastructure\bin\Debug\net9.0\CbMaker.Application.pdb
+C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Infrastructure\bin\Debug\net9.0\CbMaker.SharedKernel.pdb
