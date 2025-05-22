@@ -1,14 +1,16 @@
+using CVMaker.Application.Abstractions;
 using CVMaker.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualBasic;
 
 namespace CVMarker.Infrastructure.Context.Database
 {
-    public sealed class AppDBContext : DbContext
-    {
+    public sealed class AppDBContext : DbContext, IAplicationDBContextes, IUnitOfWork
+       {
         public AppDBContext() { }
         public AppDBContext(DbContextOptions<AppDBContext> options) 
             : base(options) { }
-        public DbSet<AcademicFields> AcademicField { get; set; }
+        public DbSet<AcademicField> AcademicField { get; set; }
         public DbSet<UsersInfo> UserInfo { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Skills> Skill { get; set; }
@@ -36,5 +38,42 @@ namespace CVMarker.Infrastructure.Context.Database
                 optionsBuilder.UseSqlServer(connectionString);
          }
           }
+        
+
+        public Task BeginTransactionAsync(CancellationToken CancellationToken = default)
+        {
+            return Database.BeginTransactionAsync(CancellationToken);  
+        }
+
+        public async Task CommitAsync(CancellationToken CancellationToken = default)
+        {
+            var transaction = Database.CurrentTransaction;
+            if (transaction != null)
+            {
+                await transaction.CommitAsync(CancellationToken);
+            }
+        }
+
+        public async Task RollbackAsync(CancellationToken CancellationToken = default)
+        {
+            
+            var transaction = Database.CurrentTransaction;
+            if (transaction != null)
+            {
+                await transaction.RollbackAsync(CancellationToken);
+            }
+        }
+
+       
+
+        public override async Task<int> SaveChangesAsync(CancellationToken CancellationToken = default)
+        {
+            int result = await base.SaveChangesAsync(CancellationToken);
+            return result;
+        }
+    }
+
+    internal interface IAplicationDBContextes
+    {
     }
 }

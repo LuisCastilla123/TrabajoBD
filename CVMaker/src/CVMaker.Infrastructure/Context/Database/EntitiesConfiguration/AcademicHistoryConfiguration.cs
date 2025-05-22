@@ -53,7 +53,7 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
                 .HasColumnType("DateTime")
                 .HasColumnName("updatedat");
 
-            builder.HasOne(e => e.AcademicField)
+            builder.HasOne(e => e.academicField)
                 .WithMany()
                 .HasForeignKey(e => e.AcademicFieldId);
 
@@ -67,7 +67,7 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
                 .HasForeignKey(e => e.UserId); 
 
             builder
-                .HasOne(e => e.AcademicField)
+                .HasOne(e => e.academicField)
                 .WithMany(ah => ah.AcademicHistories)
                 .HasForeignKey(ah => ah.AcademicFieldId)
                 .OnDelete(DeleteBehavior.ClientSetNull);

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CVMaker.Infrastructure", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CVMaker.Application", "src\CVMaker.Application\CVMaker.Application.csproj", "{CD99E381-F075-400C-8432-2A68C8CEBEFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CVMaker.SharedKernel", "src\CVMaker.SharedKernel\CVMaker.SharedKernel.csproj", "{7787DABB-5B08-4EA1-9A20-E974081C1F74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,10 +34,15 @@ Global
 		{CD99E381-F075-400C-8432-2A68C8CEBEFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD99E381-F075-400C-8432-2A68C8CEBEFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD99E381-F075-400C-8432-2A68C8CEBEFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7787DABB-5B08-4EA1-9A20-E974081C1F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7787DABB-5B08-4EA1-9A20-E974081C1F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7787DABB-5B08-4EA1-9A20-E974081C1F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7787DABB-5B08-4EA1-9A20-E974081C1F74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1DF9DB70-7474-49F1-910B-04EE0BAC7E84} = {62DA95B2-C78B-45A3-BE8B-7BE85445D7D2}
 		{6F450E78-9759-41CE-B485-5D5122FA96C9} = {62DA95B2-C78B-45A3-BE8B-7BE85445D7D2}
 		{CD99E381-F075-400C-8432-2A68C8CEBEFA} = {62DA95B2-C78B-45A3-BE8B-7BE85445D7D2}
+		{7787DABB-5B08-4EA1-9A20-E974081C1F74} = {62DA95B2-C78B-45A3-BE8B-7BE85445D7D2}
 	EndGlobalSection
 EndGlobal

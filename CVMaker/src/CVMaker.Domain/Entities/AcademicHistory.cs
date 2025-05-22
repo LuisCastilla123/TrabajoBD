@@ -15,7 +15,7 @@ namespace CVMaker.Domain.Entities
         public long UserId {get; set;}
         public DateTime CreatedAt {get; set;}
         public DateTime? UpdatedAt {get; set;}
-        public AcademicFields AcademicField {get; set;}
+        public AcademicField academicField {get; set;}
         public Degrees Degree {get; set;}
         public User Users {get; set;}
     }

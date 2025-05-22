@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CVMaker. Infrastructure.Context.EntitiesConfiguration
 {
-    internal sealed class AcademicfieldConfiguration: IEntityTypeConfiguration<AcademicFields>
+    internal sealed class AcademicfieldConfiguration: IEntityTypeConfiguration<AcademicField>
     {
-        public void Configure (EntityTypeBuilder <AcademicFields> builder)
+        public void Configure (EntityTypeBuilder <AcademicField> builder)
         {
 
     builder.HasKey(e => e.AcademicFieldsID).HasName("academic_fields_pkey");
@@ -33,21 +33,12 @@ namespace CVMaker. Infrastructure.Context.EntitiesConfiguration
 
          builder
          .HasMany(af => af.AcademicHistories)
-         .WithOne(ah => ah.AcademicField)
+         .WithOne(ah => ah.academicField)
          .HasForeignKey(ah => ah.AcademicFieldId)
          .OnDelete(DeleteBehavior.ClientSetNull);
 
        builder.HasData([
-         new AcademicFields{AcademicFieldsID =1, Description = "Ciencias Sociales"},
-         new AcademicFields{AcademicFieldsID =2, Description = "Ciencias Naturales"},
-         new AcademicFields{AcademicFieldsID =3, Description = "Matematicas"},
-         new AcademicFields{AcademicFieldsID =4, Description = "Ingeneria"},
-         new AcademicFields{AcademicFieldsID =5, Description = "Tecnologia de la Informacion"},
-         new AcademicFields{AcademicFieldsID =6, Description = "Ciencias de la Salud"},
-         new AcademicFields{AcademicFieldsID =7, Description = "Ciencias de la Educacion"},
-         new AcademicFields{AcademicFieldsID =8, Description = "Artes"},
-         new AcademicFields{AcademicFieldsID =9, Description = "Ciencias Economicas"},
-         new AcademicFields{AcademicFieldsID =10, Description = "Ciencias Politicas"},
+        
        ]);
 
         }

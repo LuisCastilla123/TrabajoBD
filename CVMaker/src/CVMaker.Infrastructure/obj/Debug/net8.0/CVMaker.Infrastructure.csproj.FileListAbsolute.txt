@@ -33,3 +33,7 @@ C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\re
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\CVMaker.Infrastructure.pdb
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\CVMaker.Infrastructure.genruntimeconfig.cache
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\ref\CVMaker.Infrastructure.dll
+C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.Application.dll
+C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.Application.pdb
+C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.SharedKernel.dll
+C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.SharedKernel.pdb
