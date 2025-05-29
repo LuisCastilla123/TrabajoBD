@@ -7,13 +7,13 @@ using Microsoft.Extensions.Logging;
 
 namespace CVMaker.Application.Features.Skills.Create
 {
-    internal sealed class CreateSkillaCommandHandler : ICommandHandler<CreateSkillsCommand>
+    internal sealed class CreateSkillsCommandHandler : ICommandHandler<CreateSkillsCommand>
     {
         private readonly IApplicationDBContext _context;
         private readonly IUnitOfWork _unitOfWork;
         private readonly ILogger<CreateSkillsCommand> _logger;
 
-        public CreateSkillaCommandHandler(
+        public CreateSkillsCommandHandler(
             IApplicationDBContext context,
             IUnitOfWork unitOfWork,
             ILogger<CreateSkillsCommand> logger)
@@ -40,9 +40,9 @@ namespace CVMaker.Application.Features.Skills.Create
                     ));
                 }
 
-                var degree = Domain.Entities.Degrees.Create(request.Description);
+                var skill = Domain.Entities.Skills.Create(request.Description);
 
-                await _context.Degrees.AddAsync(degree, cancellationToken); 
+                await _context.Skill.AddAsync(skill, cancellationToken); 
 
                 await _unitOfWork.SaveChangesAsync(cancellationToken);
                 await _unitOfWork.CommitAsync (cancellationToken);

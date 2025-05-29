@@ -10,9 +10,9 @@ namespace CVMaker.Domain.Entities
             CreatedAt = DateTime.UtcNow;
             ExternalId = Guid.NewGuid();
         }
-        public static JobTitles Create(string description)
+        public static Skills Create(string description)
         {
-            return new JobTitles(description);
+            return new Skills(description);
         }
         public long SkillId { get; set; }
         public Guid ExternalId { get; set; }

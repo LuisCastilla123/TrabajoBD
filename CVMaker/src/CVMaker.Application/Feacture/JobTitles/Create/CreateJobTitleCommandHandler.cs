@@ -43,9 +43,9 @@ namespace CVMaker.Application.Features.Degrees.Create
                     ));
                 }
 
-                var degree = Domain.Entities.Degrees.Create(request.Description);
+                var title = Domain.Entities.JobTitles.Create(request.Description);
 
-                await _context.Degrees.AddAsync(degree, cancellationToken); 
+                await _context.JobTitle.AddAsync(title, cancellationToken); 
 
                 await _unitOfWork.SaveChangesAsync(cancellationToken);
                 await _unitOfWork.CommitAsync (cancellationToken);
