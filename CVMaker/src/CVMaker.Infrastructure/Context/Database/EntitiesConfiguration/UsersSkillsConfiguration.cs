@@ -29,20 +29,17 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
                 .HasColumnName("skillid");
 
             builder.Property(e => e.CreatedAt)
-                .HasColumnType("DateTime")
+                .HasColumnType("datetime2")
                 .HasColumnName("createdat");
 
             builder.Property(e => e.UpdatedAt)
-                .HasColumnType("DateTime")
+                .HasColumnType("datetime2")
                 .HasColumnName("updatedat");
 
             builder.HasOne(e => e.User)
                 .WithOne()
                 .HasForeignKey<UsersSkills>(e => e.UserId);
 
-            builder.HasOne(e => e.Skill)
-                .WithMany(s => s.UserSkills)
-                .HasForeignKey(e => e.SkillId);
             
             builder
         .HasOne(af => af.Skill)

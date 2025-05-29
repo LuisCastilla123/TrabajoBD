@@ -29,11 +29,11 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
                 .HasColumnName("specialty");
 
             builder.Property(e => e.StartDate)
-                .HasColumnType("date")
+                .HasColumnType("datetime2")
                 .HasColumnName("startdate");
 
             builder.Property(e => e.EndDate)
-                .HasColumnType("DateTime")
+                .HasColumnType("datetime2")
                 .HasColumnName("enddate");
 
             builder.Property(e => e.DegreeId)
@@ -46,11 +46,11 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
                 .HasColumnName("userid");
 
             builder.Property(e => e.CreatedAt)
-                .HasColumnType("DateTime")
+                .HasColumnType("datetime2")
                 .HasColumnName("createdat");
 
             builder.Property(e => e.UpdatedAt)
-                .HasColumnType("DateTime")
+                .HasColumnType("datetime2")
                 .HasColumnName("updatedat");
 
             builder.HasOne(e => e.academicField)

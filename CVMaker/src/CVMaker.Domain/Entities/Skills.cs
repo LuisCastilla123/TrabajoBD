@@ -2,6 +2,18 @@ namespace CVMaker.Domain.Entities
 {
     public class Skills
     {
+        public Skills() { }
+
+        public Skills(string description)
+        {
+            Description = description;
+            CreatedAt = DateTime.UtcNow;
+            ExternalId = Guid.NewGuid();
+        }
+        public static JobTitles Create(string description)
+        {
+            return new JobTitles(description);
+        }
         public long SkillId { get; set; }
         public Guid ExternalId { get; set; }
         public string Description { get; set; }

@@ -16,7 +16,7 @@ namespace CVMaker. Infrastructure.Context.EntitiesConfiguration
                 .ValueGeneratedOnAdd()
                 .HasColumnName("workexperienceid");
             builder.Property(e => e.CreatedAt)
-                .HasColumnType("DateTime")
+                .HasColumnType("datetime2")
                 .HasColumnName("createdat");
             builder.Property(e => e.EnterpriseName).HasMaxLength(500)
                 .HasColumnName("enterprisename");
@@ -26,10 +26,10 @@ namespace CVMaker. Infrastructure.Context.EntitiesConfiguration
             builder.Property(e => e.Responsibilities).HasMaxLength(500)
                 .HasColumnName("responsibilities");
             builder.Property(e => e.StartDate)
-                .HasColumnType("DateTime")
+                .HasColumnType("datetime2")
                 .HasColumnName("startdate");
             builder.Property(e => e.EndDate)
-                .HasColumnType("DateTime")
+                .HasColumnType("datetime2")
                 .HasColumnName("enddate");
             builder.Property(e => e.JobTitleId)
                 .HasColumnName("jobtitleid");

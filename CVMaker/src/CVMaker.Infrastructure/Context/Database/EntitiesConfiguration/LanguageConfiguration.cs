@@ -25,11 +25,11 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
                 .HasColumnName("description");
 
             builder.Property(e => e.createdAt)
-                .HasColumnType("DateTime")
+                .HasColumnType("datetime2")
                 .HasColumnName("createdat");
 
             builder.Property(e => e.updatedAt)
-                .HasColumnType("DateTime")
+                .HasColumnType("datetime2")
                 .HasColumnName("updatedat");
 
             builder.HasMany(e => e.UserInfoLanguage)

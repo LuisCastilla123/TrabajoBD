@@ -22,7 +22,7 @@ namespace CVMaker.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("CVMaker.Domain.Entities.AcademicFields", b =>
+            modelBuilder.Entity("CVMaker.Domain.Entities.AcademicField", b =>
                 {
                     b.Property<long>("AcademicFieldsID")
                         .ValueGeneratedOnAdd()
@@ -32,7 +32,7 @@ namespace CVMaker.Infrastructure.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("AcademicFieldsID"));
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("DateTime2")
+                        .HasColumnType("datetime2")
                         .HasColumnName("created_at");
 
                     b.Property<string>("Description")
@@ -47,7 +47,7 @@ namespace CVMaker.Infrastructure.Migrations
                         .HasDefaultValueSql("NEWID()");
 
                     b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("DateTime2")
+                        .HasColumnType("datetime2")
                         .HasColumnName("updated_at");
 
                     b.HasKey("AcademicFieldsID")
@@ -145,7 +145,7 @@ namespace CVMaker.Infrastructure.Migrations
                         .HasColumnName("academicfieldid");
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("DateTime")
+                        .HasColumnType("datetime2")
                         .HasColumnName("createdat");
 
                     b.Property<long>("DegreeId")
@@ -153,7 +153,7 @@ namespace CVMaker.Infrastructure.Migrations
                         .HasColumnName("degreeid");
 
                     b.Property<DateTime?>("EndDate")
-                        .HasColumnType("DateTime")
+                        .HasColumnType("datetime2")
                         .HasColumnName("enddate");
 
                     b.Property<Guid>("ExternalID")
@@ -175,11 +175,11 @@ namespace CVMaker.Infrastructure.Migrations
                         .HasColumnName("specialty");
 
                     b.Property<DateTime>("StartDate")
-                        .HasColumnType("date")
+                        .HasColumnType("datetime2")
                         .HasColumnName("startdate");
 
                     b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("DateTime")
+                        .HasColumnType("datetime2")
                         .HasColumnName("updatedat");
 
                     b.Property<long>("UserId")
@@ -211,8 +211,8 @@ namespace CVMaker.Infrastructure.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("DegreeId"));
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("DateTime2")
-                        .HasColumnName("created_at");
+                        .HasColumnType("datetime2")
+                        .HasColumnName("createdat");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -227,7 +227,7 @@ namespace CVMaker.Infrastructure.Migrations
                         .HasDefaultValueSql("NEWID()");
 
                     b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("DateTime")
+                        .HasColumnType("datetime2")
                         .HasColumnName("updatedat");
 
                     b.HasKey("DegreeId")
@@ -291,7 +291,7 @@ namespace CVMaker.Infrastructure.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("JobTitleId"));
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("DateTime")
+                        .HasColumnType("datetime2")
                         .HasColumnName("createdat");
 
                     b.Property<string>("Description")
@@ -307,7 +307,7 @@ namespace CVMaker.Infrastructure.Migrations
                         .HasDefaultValueSql("NEWID()");
 
                     b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("DateTime")
+                        .HasColumnType("datetime2")
                         .HasColumnName("updatedat");
 
                     b.HasKey("JobTitleId")
@@ -409,7 +409,7 @@ namespace CVMaker.Infrastructure.Migrations
                         .HasDefaultValueSql("NEWID()");
 
                     b.Property<DateTime>("createdAt")
-                        .HasColumnType("DateTime")
+                        .HasColumnType("datetime2")
                         .HasColumnName("createdat");
 
                     b.Property<string>("description")
@@ -419,7 +419,7 @@ namespace CVMaker.Infrastructure.Migrations
                         .HasColumnName("description");
 
                     b.Property<DateTime>("updatedAt")
-                        .HasColumnType("DateTime")
+                        .HasColumnType("datetime2")
                         .HasColumnName("updatedat");
 
                     b.HasKey("languageId")
@@ -483,7 +483,7 @@ namespace CVMaker.Infrastructure.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("SkillId"));
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("DateTime")
+                        .HasColumnType("datetime2")
                         .HasColumnName("createdat");
 
                     b.Property<string>("Description")
@@ -499,7 +499,7 @@ namespace CVMaker.Infrastructure.Migrations
                         .HasDefaultValueSql("NEWID()");
 
                     b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("DateTime")
+                        .HasColumnType("datetime2")
                         .HasColumnName("updatedat");
 
                     b.HasKey("SkillId")
@@ -521,11 +521,11 @@ namespace CVMaker.Infrastructure.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("UserId"));
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("DateTime")
+                        .HasColumnType("datetime2")
                         .HasColumnName("createdat");
 
                     b.Property<DateTime>("DeletedAt")
-                        .HasColumnType("DateTime")
+                        .HasColumnType("datetime2")
                         .HasColumnName("deletedat");
 
                     b.Property<string>("Email")
@@ -617,7 +617,7 @@ namespace CVMaker.Infrastructure.Migrations
                         .HasColumnName("city");
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("DateTime")
+                        .HasColumnType("datetime2")
                         .HasColumnName("createdat");
 
                     b.Property<Guid>("ExternalId")
@@ -641,7 +641,7 @@ namespace CVMaker.Infrastructure.Migrations
                         .HasColumnName("state");
 
                     b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("DateTime")
+                        .HasColumnType("datetime2")
                         .HasColumnName("updatedat");
 
                     b.Property<long>("UserId")
@@ -675,7 +675,7 @@ namespace CVMaker.Infrastructure.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("UserInfoLanguageId"));
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("Date")
+                        .HasColumnType("datetime2")
                         .HasColumnName("createdat");
 
                     b.Property<Guid>("ExternalId")
@@ -695,7 +695,7 @@ namespace CVMaker.Infrastructure.Migrations
                         .HasColumnName("level");
 
                     b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("DateTime")
+                        .HasColumnType("datetime2")
                         .HasColumnName("updatedat");
 
                     b.Property<long>("UserInfoId")
@@ -725,11 +725,11 @@ namespace CVMaker.Infrastructure.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("WorkExperienceId"));
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("DateTime")
+                        .HasColumnType("datetime2")
                         .HasColumnName("createdat");
 
                     b.Property<DateTime>("EndDate")
-                        .HasColumnType("DateTime")
+                        .HasColumnType("datetime2")
                         .HasColumnName("enddate");
 
                     b.Property<string>("EnterpriseName")
@@ -755,7 +755,7 @@ namespace CVMaker.Infrastructure.Migrations
                         .HasColumnName("responsibilities");
 
                     b.Property<DateTime>("StartDate")
-                        .HasColumnType("DateTime")
+                        .HasColumnType("datetime2")
                         .HasColumnName("startdate");
 
                     b.Property<DateTime>("UpdatedAt")
@@ -788,7 +788,7 @@ namespace CVMaker.Infrastructure.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("UserSkillId"));
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("DateTime")
+                        .HasColumnType("datetime2")
                         .HasColumnName("createdat");
 
                     b.Property<Guid>("ExternalID")
@@ -802,7 +802,7 @@ namespace CVMaker.Infrastructure.Migrations
                         .HasColumnName("skillid");
 
                     b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("DateTime")
+                        .HasColumnType("datetime2")
                         .HasColumnName("updatedat");
 
                     b.Property<long>("UserId")
@@ -832,7 +832,7 @@ namespace CVMaker.Infrastructure.Migrations
 
             modelBuilder.Entity("CVMaker.Domain.Entities.AcademicHistory", b =>
                 {
-                    b.HasOne("CVMaker.Domain.Entities.AcademicFields", "AcademicField")
+                    b.HasOne("CVMaker.Domain.Entities.AcademicField", "academicField")
                         .WithMany("AcademicHistories")
                         .HasForeignKey("AcademicFieldId")
                         .IsRequired();
@@ -847,11 +847,11 @@ namespace CVMaker.Infrastructure.Migrations
                         .HasForeignKey("UserId")
                         .IsRequired();
 
-                    b.Navigation("AcademicField");
-
                     b.Navigation("Degree");
 
                     b.Navigation("Users");
+
+                    b.Navigation("academicField");
                 });
 
             modelBuilder.Entity("CVMaker.Domain.Entities.UsersInfo", b =>
@@ -920,7 +920,7 @@ namespace CVMaker.Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("CVMaker.Domain.Entities.AcademicFields", b =>
+            modelBuilder.Entity("CVMaker.Domain.Entities.AcademicField", b =>
                 {
                     b.Navigation("AcademicHistories");
                 });

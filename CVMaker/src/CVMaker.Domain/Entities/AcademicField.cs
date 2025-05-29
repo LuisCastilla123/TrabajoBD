@@ -14,6 +14,7 @@ namespace CVMaker.Domain.Entities
             return new AcademicField(description);
     }
     
+    public AcademicField(){}
 
         public long AcademicFieldsID { get; set; }
         public Guid ExternalID {get; set; }

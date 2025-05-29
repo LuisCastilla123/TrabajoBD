@@ -51,15 +51,15 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
             .HasColumnName("hashedpassword");
 
         builder.Property(e => e.CreatedAt)
-            .HasColumnType("DateTime")
+            .HasColumnType("datetime2")
             .HasColumnName("createdat");
 
         builder.Property(e => e.UpdatedAt)
-            .HasColumnType("DateTime")
+            .HasColumnType("datetime2")
             .HasColumnName("updatedat");
 
         builder.Property(e => e.DeletedAt)
-            .HasColumnType("DateTime")
+            .HasColumnType("datetime2")
             .HasColumnName("deletedat");
 
         builder.HasMany(e => e.AcademicHistory)

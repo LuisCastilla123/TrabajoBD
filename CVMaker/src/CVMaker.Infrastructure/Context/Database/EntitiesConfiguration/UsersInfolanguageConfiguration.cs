@@ -32,11 +32,11 @@ namespace CVMaker. Infrastructure.Context.EntitiesConfiguration
             .HasColumnName("languageid");
 
         builder.Property(e => e.CreatedAt)
-            .HasColumnType("Date")
+            .HasColumnType("datetime2")
             .HasColumnName("createdat");
 
         builder.Property(e => e.UpdatedAt)
-            .HasColumnType("DateTime")
+            .HasColumnType("datetime2")
             .HasColumnName("updatedat");
 
         builder.HasOne(e => e.UserInfo)
