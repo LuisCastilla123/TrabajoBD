@@ -46,7 +46,7 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
         builder.Property(e => e.TwoFactorEnabled)
             .HasColumnName("twofactorenabled");
 
-        builder.Property(e => e.HashedPassword)
+        builder.Property(e => e.HashPassword)
             .HasMaxLength(500)
             .HasColumnName("hashedpassword");
 
@@ -77,6 +77,14 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
         builder.HasOne(e => e.UserSkills)
             .WithOne(us => us.User)
             .HasForeignKey<UsersSkills>(us => us.UserId);
+
+            builder.Property(e => e.HashPassword)
+            .HasMaxLength(500)
+            .HasColumnName("hash_salting");
+
+            builder.Property(e => e.HashSalting)
+            .HasMaxLength(500)
+            .HasColumnName("hash_salting");
 
 
         builder

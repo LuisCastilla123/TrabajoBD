@@ -1,11 +1,11 @@
+C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.SharedKernel\bin\Debug\net8.0\CVMaker.SharedKernel.deps.json
+C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.SharedKernel\bin\Debug\net8.0\CVMaker.SharedKernel.dll
+C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.SharedKernel\bin\Debug\net8.0\CVMaker.SharedKernel.pdb
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.SharedKernel\obj\Debug\net8.0\CVMaker.SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.SharedKernel\obj\Debug\net8.0\CVMaker.SharedKernel.AssemblyInfoInputs.cache
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.SharedKernel\obj\Debug\net8.0\CVMaker.SharedKernel.AssemblyInfo.cs
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.SharedKernel\obj\Debug\net8.0\CVMaker.SharedKernel.csproj.CoreCompileInputs.cache
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.SharedKernel\obj\Debug\net8.0\CVMaker.SharedKernel.sourcelink.json
-C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.SharedKernel\bin\Debug\net8.0\CVMaker.SharedKernel.deps.json
-C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.SharedKernel\bin\Debug\net8.0\CVMaker.SharedKernel.dll
-C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.SharedKernel\bin\Debug\net8.0\CVMaker.SharedKernel.pdb
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.SharedKernel\obj\Debug\net8.0\CVMaker.SharedKernel.dll
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.SharedKernel\obj\Debug\net8.0\refint\CVMaker.SharedKernel.dll
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.SharedKernel\obj\Debug\net8.0\CVMaker.SharedKernel.pdb

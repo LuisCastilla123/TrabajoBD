@@ -1,9 +1,17 @@
 using CVMaker.Application.Abstractions;
+using CVMaker.Application.Abstractions.Authentication;
 using CVMaker.Application.Abstractions.Data;
 using CVMarker.Infrastructure.Context.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Identity;
+using System.Text;
+
+
 
 namespace CVMaker.Infrastructure
 {
@@ -21,7 +29,23 @@ namespace CVMaker.Infrastructure
 
             services.AddScoped<IApplicationDBContext>(provider => provider.GetRequiredService<AppDBContext>());
 
+            
+        
+        services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+        .AddJwtBearer(Options =>
+    {
+        Options.RequireHttpsMetadata = false;
+        Options.TokenValidationParameters = new TokenValidationParameters
+        {
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JwtSettings:Secret"])),
+            ValidIssuer = configuration["JwtSettings:Issuer"],
+            ValidAudience = configuration["JwtSettings:Audience"],
+            ClockSkew = TimeSpan.Zero
+        };
+    });
+
+        services.AddScoped<IPasswordHasher, PasswordHasher>();
             return services;
-        }
     }
+}
 }

@@ -19,8 +19,12 @@ C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CV
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.Infrastructure.runtimeconfig.json
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.Infrastructure.dll
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.Infrastructure.pdb
+C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.Application.dll
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.Domain.dll
+C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.SharedKernel.dll
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.Domain.pdb
+C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.Application.pdb
+C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.SharedKernel.pdb
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\CVMaker.Infrastructure.csproj.AssemblyReference.cache
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\CVMaker.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\CVMaker.Infrastructure.AssemblyInfoInputs.cache
@@ -33,7 +37,3 @@ C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\re
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\CVMaker.Infrastructure.pdb
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\CVMaker.Infrastructure.genruntimeconfig.cache
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\obj\Debug\net8.0\ref\CVMaker.Infrastructure.dll
-C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.Application.dll
-C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.Application.pdb
-C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.SharedKernel.dll
-C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Infrastructure\bin\Debug\net8.0\CVMaker.SharedKernel.pdb
