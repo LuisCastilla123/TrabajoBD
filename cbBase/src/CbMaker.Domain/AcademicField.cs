@@ -11,13 +11,13 @@ namespace CbMaker.Domain
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
 
-        public ICollection<AcademicHistory> AcademicHistories { get; set; }
+         public ICollection<AcademicHistory> AcademicHistories { get; set; }
 
-      
         private AcademicField(string description)
         {
             Description = description;
             CreatedAt = DateTime.UtcNow;
+            UpdatedAt = DateTime.UtcNow;
             ExternalId = Guid.NewGuid();
         }
 
@@ -25,7 +25,7 @@ namespace CbMaker.Domain
         {
             return new AcademicField(description);
         }
-
+        public ICollection<Language> Languages { get; set; } = new List<Language>();
         public AcademicField() { }
     }
 }

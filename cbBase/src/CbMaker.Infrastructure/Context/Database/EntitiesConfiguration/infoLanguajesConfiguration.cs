@@ -1,7 +1,7 @@
-
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using CbMaker.Domain;
+
 namespace CbMaker.Infrastructure.Context.EntitiesConfiguration
 {
     internal sealed class UserInfoLanguageConfiguration : IEntityTypeConfiguration<UserInfoLanguage>
@@ -42,6 +42,17 @@ namespace CbMaker.Infrastructure.Context.EntitiesConfiguration
             builder.Property(e => e.UpdatedAt)
                    .HasColumnType("datetime2")
                    .HasColumnName("updated_at");
+
+            builder.HasOne(e => e.Language)
+                   .WithMany(l => l.UserInfoLanguages)
+                   .HasForeignKey(e => e.LanguageId)
+                   .OnDelete(DeleteBehavior.Cascade);
+
+            builder.HasOne(e => e.UserInfo)
+                   .WithMany(u => u.UserInfoLanguages)
+                   .HasForeignKey(e => e.UserInfoId)
+                   .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
+

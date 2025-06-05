@@ -11,9 +11,11 @@ namespace CbMaker.Domain
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public long JobTitleId { get; set; }
-        public long UserId { get; set; } 
+        public long UserId { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
+        public JobTitle JobTitle { get; set; }
+        public User User { get; set; }
     }
 }
 

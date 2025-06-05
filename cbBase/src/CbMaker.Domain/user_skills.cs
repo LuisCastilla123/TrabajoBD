@@ -9,6 +9,9 @@ namespace CbMaker.Domain
         public long SkillId { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
+        
+        public User User { get; set; }
+        public Skill Skill { get; set; }
     }
 }
 

@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using CbMaker.Application.Abstractions.Data;
 using CbMaker.Domain;
-using CbMaker.Infrastructure;
 
 namespace CbMaker.Infrastructure.Context.Database
 {
@@ -57,14 +56,6 @@ namespace CbMaker.Infrastructure.Context.Database
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
             modelBuilder.HasDefaultSchema("dbo");
         }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-                string connectionString = @"Server=VDZ;Database=CVMakerDB;Trusted_Connection=True;Encrypt=False;";
-                optionsBuilder.UseSqlServer(connectionString);
-            }
-        }
     }
 }
+

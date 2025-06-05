@@ -16,6 +16,14 @@ namespace CbMaker.Infrastructure.Context.EntitiesConfiguration
             builder.HasIndex(e => e.ExternalId, "users_externalid_key")
                    .IsUnique();
 
+                     builder.Property(e => e.HashPassword)
+                     .HasMaxLength(500)
+                     .HasColumnName("Hash_password");
+
+                     builder.Property(e => e.HashSalting)
+                     .HasMaxLength(500)
+                     .HasColumnName("hash_salting");
+
             builder.Property(e => e.UserId)
                    .ValueGeneratedOnAdd()
                    .HasColumnName("user_id");

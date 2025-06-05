@@ -1,7 +1,7 @@
-
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using CbMaker.Domain;
+
 namespace CbMaker.Infrastructure.Context.EntitiesConfiguration
 {
     internal sealed class LanguageConfiguration : IEntityTypeConfiguration<Language>
@@ -25,8 +25,8 @@ namespace CbMaker.Infrastructure.Context.EntitiesConfiguration
                    .IsRequired()
                    .HasColumnName("description");
 
-          builder.Property(e => e.AcademicFieldId)
-                   .HasColumnName("academifield_id");
+            builder.Property(e => e.AcademicFieldId)
+                   .HasColumnName("academic_field_id");
 
             builder.Property(e => e.CreatedAt)
                    .HasColumnType("datetime2")
@@ -36,8 +36,11 @@ namespace CbMaker.Infrastructure.Context.EntitiesConfiguration
                    .HasColumnType("datetime2")
                    .HasColumnName("updated_at");
 
-                 
-
+            builder.HasOne(e => e.AcademicField)
+                   .WithMany(f => f.Languages)
+                   .HasForeignKey(e => e.AcademicFieldId)
+                   .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
+

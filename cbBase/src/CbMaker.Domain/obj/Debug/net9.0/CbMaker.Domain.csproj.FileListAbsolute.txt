@@ -16,7 +16,6 @@ C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Domain\obj\Debug\net9.0
 C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Domain\obj\Debug\net9.0\CbMaker.Domain.AssemblyInfoInputs.cache
 C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Domain\obj\Debug\net9.0\CbMaker.Domain.AssemblyInfo.cs
 C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Domain\obj\Debug\net9.0\CbMaker.Domain.csproj.CoreCompileInputs.cache
-C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Domain\obj\Debug\net9.0\CbMaker.Domain.sourcelink.json
 C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Domain\obj\Debug\net9.0\CbMaker.Domain.dll
 C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Domain\obj\Debug\net9.0\refint\CbMaker.Domain.dll
 C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Domain\obj\Debug\net9.0\CbMaker.Domain.pdb

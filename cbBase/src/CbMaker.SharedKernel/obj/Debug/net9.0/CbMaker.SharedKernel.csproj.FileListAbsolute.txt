@@ -1,11 +1,10 @@
+C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.SharedKernel\bin\Debug\net9.0\CbMaker.SharedKernel.deps.json
+C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.SharedKernel\bin\Debug\net9.0\CbMaker.SharedKernel.dll
+C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.SharedKernel\bin\Debug\net9.0\CbMaker.SharedKernel.pdb
 C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.SharedKernel\obj\Debug\net9.0\CbMaker.SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.SharedKernel\obj\Debug\net9.0\CbMaker.SharedKernel.AssemblyInfoInputs.cache
 C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.SharedKernel\obj\Debug\net9.0\CbMaker.SharedKernel.AssemblyInfo.cs
 C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.SharedKernel\obj\Debug\net9.0\CbMaker.SharedKernel.csproj.CoreCompileInputs.cache
-C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.SharedKernel\obj\Debug\net9.0\CbMaker.SharedKernel.sourcelink.json
-C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.SharedKernel\bin\Debug\net9.0\CbMaker.SharedKernel.deps.json
-C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.SharedKernel\bin\Debug\net9.0\CbMaker.SharedKernel.dll
-C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.SharedKernel\bin\Debug\net9.0\CbMaker.SharedKernel.pdb
 C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.SharedKernel\obj\Debug\net9.0\CbMaker.SharedKernel.dll
 C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.SharedKernel\obj\Debug\net9.0\refint\CbMaker.SharedKernel.dll
 C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.SharedKernel\obj\Debug\net9.0\CbMaker.SharedKernel.pdb

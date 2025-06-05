@@ -18,7 +18,7 @@ namespace CbMaker.Infrastructure.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasDefaultSchema("dbo")
-                .HasAnnotation("ProductVersion", "9.0.4")
+                .HasAnnotation("ProductVersion", "9.0.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -71,19 +71,15 @@ namespace CbMaker.Infrastructure.Migrations
 
                     b.Property<long>("AcademicFieldId")
                         .HasColumnType("bigint")
-                        .HasColumnName("academifield_id");
+                        .HasColumnName("academic_field_id");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2")
                         .HasColumnName("created_at");
 
                     b.Property<long>("DegreeId")
-                        .HasMaxLength(100)
                         .HasColumnType("bigint")
                         .HasColumnName("degree_id");
-
-                    b.Property<long?>("DegreeId1")
-                        .HasColumnType("bigint");
 
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2")
@@ -113,9 +109,6 @@ namespace CbMaker.Infrastructure.Migrations
                         .HasColumnType("bigint")
                         .HasColumnName("user_id");
 
-                    b.Property<long?>("UserId1")
-                        .HasColumnType("bigint");
-
                     b.HasKey("ExternalId")
                         .HasName("academichistories_pkey");
 
@@ -123,11 +116,7 @@ namespace CbMaker.Infrastructure.Migrations
 
                     b.HasIndex("DegreeId");
 
-                    b.HasIndex("DegreeId1");
-
                     b.HasIndex("UserId");
-
-                    b.HasIndex("UserId1");
 
                     b.HasIndex(new[] { "ExternalId" }, "academichistories_externalid_key")
                         .IsUnique();
@@ -167,8 +156,9 @@ namespace CbMaker.Infrastructure.Migrations
                     b.HasKey("DegreeId")
                         .HasName("degrees_pkey");
 
-                    b.HasIndex(new[] { "ExternalId" }, "degrees_externalid_key")
-                        .IsUnique();
+                    b.HasIndex("ExternalId")
+                        .IsUnique()
+                        .HasDatabaseName("degrees_externalid_key");
 
                     b.ToTable("tb_degrees", "dbo");
 
@@ -176,42 +166,42 @@ namespace CbMaker.Infrastructure.Migrations
                         new
                         {
                             DegreeId = 1L,
-                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Primaria",
-                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
-                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            ExternalId = new Guid("11111111-1111-1111-1111-111111111111"),
+                            UpdatedAt = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             DegreeId = 2L,
-                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Secundaria",
-                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
-                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            ExternalId = new Guid("22222222-2222-2222-2222-222222222222"),
+                            UpdatedAt = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             DegreeId = 3L,
-                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Universidad",
-                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
-                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            ExternalId = new Guid("33333333-3333-3333-3333-333333333333"),
+                            UpdatedAt = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             DegreeId = 4L,
-                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Maestría",
-                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
-                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            ExternalId = new Guid("44444444-4444-4444-4444-444444444444"),
+                            UpdatedAt = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             DegreeId = 5L,
-                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Description = "Doctorado",
-                            ExternalId = new Guid("00000000-0000-0000-0000-000000000000"),
-                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            ExternalId = new Guid("55555555-5555-5555-5555-555555555555"),
+                            UpdatedAt = new DateTime(2023, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });
 
@@ -337,7 +327,7 @@ namespace CbMaker.Infrastructure.Migrations
 
                     b.Property<long>("AcademicFieldId")
                         .HasColumnType("bigint")
-                        .HasColumnName("academifield_id");
+                        .HasColumnName("academic_field_id");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2")
@@ -349,12 +339,17 @@ namespace CbMaker.Infrastructure.Migrations
                         .HasColumnType("nvarchar(200)")
                         .HasColumnName("description");
 
+                    b.Property<Guid>("LanguageId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2")
                         .HasColumnName("updated_at");
 
                     b.HasKey("ExternalId")
                         .HasName("languages_pkey");
+
+                    b.HasIndex("AcademicFieldId");
 
                     b.HasIndex(new[] { "ExternalId" }, "languages_externalid_key")
                         .IsUnique();
@@ -423,10 +418,9 @@ namespace CbMaker.Infrastructure.Migrations
                         .HasColumnType("nvarchar(100)")
                         .HasColumnName("email");
 
-                    b.Property<string>("EmailConfirmed")
-                        .IsRequired()
+                    b.Property<bool>("EmailConfirmed")
                         .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)")
+                        .HasColumnType("bit")
                         .HasColumnName("email_confirmed");
 
                     b.Property<Guid>("ExternalId")
@@ -441,12 +435,19 @@ namespace CbMaker.Infrastructure.Migrations
                         .HasColumnType("nvarchar(200)")
                         .HasColumnName("hash_password");
 
-                    b.Property<double>("PhoneNumber")
-                        .HasColumnType("float")
+                    b.Property<byte[]>("HashSalting")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("varbinary(500)")
+                        .HasColumnName("hash_salting");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
                         .HasColumnName("phone_number");
 
-                    b.Property<double>("PhoneNumberConfirmed")
-                        .HasColumnType("float")
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit")
                         .HasColumnName("phone_number_confirmed");
 
                     b.Property<string>("Tag")
@@ -544,6 +545,9 @@ namespace CbMaker.Infrastructure.Migrations
                     b.HasKey("UserInfoId")
                         .HasName("userinfo_pkey");
 
+                    b.HasIndex("UserId")
+                        .IsUnique();
+
                     b.HasIndex(new[] { "ExternalId" }, "userinfo_externalid_key")
                         .IsUnique();
 
@@ -562,10 +566,9 @@ namespace CbMaker.Infrastructure.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("created_at");
 
-                    b.Property<string>("LanguageId")
-                        .IsRequired()
+                    b.Property<Guid>("LanguageId")
                         .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)")
+                        .HasColumnType("uniqueidentifier")
                         .HasColumnName("language_id");
 
                     b.Property<double>("Level")
@@ -576,14 +579,22 @@ namespace CbMaker.Infrastructure.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("updated_at");
 
-                    b.Property<string>("UserInfoId")
-                        .IsRequired()
+                    b.Property<long?>("UserId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("UserInfoId")
                         .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)")
+                        .HasColumnType("bigint")
                         .HasColumnName("user_info_id");
 
                     b.HasKey("ExternalId")
                         .HasName("userinfolanguages_pkey");
+
+                    b.HasIndex("LanguageId");
+
+                    b.HasIndex("UserId");
+
+                    b.HasIndex("UserInfoId");
 
                     b.HasIndex(new[] { "ExternalId" }, "userinfolanguages_externalid_key")
                         .IsUnique();
@@ -618,6 +629,10 @@ namespace CbMaker.Infrastructure.Migrations
 
                     b.HasKey("UserSkillId")
                         .HasName("userskills_pkey");
+
+                    b.HasIndex("SkillId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("tb_user_skills", "dbo");
                 });
@@ -676,6 +691,10 @@ namespace CbMaker.Infrastructure.Migrations
                     b.HasKey("WorkExperienceId")
                         .HasName("workexperience_pkey");
 
+                    b.HasIndex("JobTitleId");
+
+                    b.HasIndex("UserId");
+
                     b.HasIndex(new[] { "ExternalId" }, "workexperience_externalid_key")
                         .IsUnique();
 
@@ -691,24 +710,16 @@ namespace CbMaker.Infrastructure.Migrations
                         .IsRequired();
 
                     b.HasOne("CbMaker.Domain.Degree", "Degree")
-                        .WithMany()
+                        .WithMany("AcademicHistories")
                         .HasForeignKey("DegreeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CbMaker.Domain.Degree", null)
-                        .WithMany("AcademicHistories")
-                        .HasForeignKey("DegreeId1");
-
                     b.HasOne("CbMaker.Domain.User", "User")
-                        .WithMany()
+                        .WithMany("AcademicHistories")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("CbMaker.Domain.User", null)
-                        .WithMany("AcademicHistories")
-                        .HasForeignKey("UserId1");
 
                     b.Navigation("AcademicField");
 
@@ -717,9 +728,94 @@ namespace CbMaker.Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("CbMaker.Domain.Language", b =>
+                {
+                    b.HasOne("CbMaker.Domain.AcademicField", "AcademicField")
+                        .WithMany("Languages")
+                        .HasForeignKey("AcademicFieldId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("AcademicField");
+                });
+
+            modelBuilder.Entity("CbMaker.Domain.UserInfo", b =>
+                {
+                    b.HasOne("CbMaker.Domain.User", "User")
+                        .WithOne("UserInfo")
+                        .HasForeignKey("CbMaker.Domain.UserInfo", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("CbMaker.Domain.UserInfoLanguage", b =>
+                {
+                    b.HasOne("CbMaker.Domain.Language", "Language")
+                        .WithMany("UserInfoLanguages")
+                        .HasForeignKey("LanguageId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CbMaker.Domain.User", null)
+                        .WithMany("UserInfoLanguages")
+                        .HasForeignKey("UserId");
+
+                    b.HasOne("CbMaker.Domain.UserInfo", "UserInfo")
+                        .WithMany("UserInfoLanguages")
+                        .HasForeignKey("UserInfoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Language");
+
+                    b.Navigation("UserInfo");
+                });
+
+            modelBuilder.Entity("CbMaker.Domain.UserSkill", b =>
+                {
+                    b.HasOne("CbMaker.Domain.Skill", "Skill")
+                        .WithMany("UserSkills")
+                        .HasForeignKey("SkillId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CbMaker.Domain.User", "User")
+                        .WithMany("UserSkills")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Skill");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("CbMaker.Domain.WorkExperience", b =>
+                {
+                    b.HasOne("CbMaker.Domain.JobTitle", "JobTitle")
+                        .WithMany("WorkExperiences")
+                        .HasForeignKey("JobTitleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CbMaker.Domain.User", "User")
+                        .WithMany("WorkExperiences")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("JobTitle");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("CbMaker.Domain.AcademicField", b =>
                 {
                     b.Navigation("AcademicHistories");
+
+                    b.Navigation("Languages");
                 });
 
             modelBuilder.Entity("CbMaker.Domain.Degree", b =>
@@ -727,9 +823,38 @@ namespace CbMaker.Infrastructure.Migrations
                     b.Navigation("AcademicHistories");
                 });
 
+            modelBuilder.Entity("CbMaker.Domain.JobTitle", b =>
+                {
+                    b.Navigation("WorkExperiences");
+                });
+
+            modelBuilder.Entity("CbMaker.Domain.Language", b =>
+                {
+                    b.Navigation("UserInfoLanguages");
+                });
+
+            modelBuilder.Entity("CbMaker.Domain.Skill", b =>
+                {
+                    b.Navigation("UserSkills");
+                });
+
             modelBuilder.Entity("CbMaker.Domain.User", b =>
                 {
                     b.Navigation("AcademicHistories");
+
+                    b.Navigation("UserInfo")
+                        .IsRequired();
+
+                    b.Navigation("UserInfoLanguages");
+
+                    b.Navigation("UserSkills");
+
+                    b.Navigation("WorkExperiences");
+                });
+
+            modelBuilder.Entity("CbMaker.Domain.UserInfo", b =>
+                {
+                    b.Navigation("UserInfoLanguages");
                 });
 #pragma warning restore 612, 618
         }

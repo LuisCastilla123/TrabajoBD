@@ -4,15 +4,3 @@ C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Application\obj\Debug\n
 C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Application\obj\Debug\net9.0\CbMaker.Application.AssemblyInfo.cs
 C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Application\obj\Debug\net9.0\CbMaker.Application.csproj.CoreCompileInputs.cache
 C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Application\obj\Debug\net9.0\CbMaker.Application.sourcelink.json
-C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Application\bin\Debug\net9.0\CbMaker.Application.deps.json
-C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Application\bin\Debug\net9.0\CbMaker.Application.dll
-C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Application\bin\Debug\net9.0\CbMaker.Application.pdb
-C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Application\bin\Debug\net9.0\CbMaker.Domain.dll
-C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Application\bin\Debug\net9.0\CbMaker.Domain.pdb
-C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Application\obj\Debug\net9.0\CbMaker..888E8E59.Up2Date
-C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Application\obj\Debug\net9.0\CbMaker.Application.dll
-C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Application\obj\Debug\net9.0\refint\CbMaker.Application.dll
-C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Application\obj\Debug\net9.0\CbMaker.Application.pdb
-C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Application\obj\Debug\net9.0\ref\CbMaker.Application.dll
-C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Application\bin\Debug\net9.0\CbMaker.SharedKernel.dll
-C:\Users\liluc\Documents\BaseDatosIII\cbBase\src\CbMaker.Application\bin\Debug\net9.0\CbMaker.SharedKernel.pdb
