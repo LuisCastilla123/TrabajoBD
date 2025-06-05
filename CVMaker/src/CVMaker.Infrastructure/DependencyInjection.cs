@@ -46,6 +46,8 @@ namespace CVMaker.Infrastructure
     });
 
         services.AddScoped<IPasswordHasher, PasswordHasher>();
+        
+        services.AddScoped<IJwtProvider, JwtProvider>();
             return services;
     }
 }

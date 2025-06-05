@@ -21,7 +21,7 @@ namespace CVMaker.Infrastructure.Authentication
         public string GenerateToken(User user)
         {
                 var tokenHandler = new JwtSecurityTokenHandler();
-                var key = Encoding.ASCII.GetBytes("_jwtSettings.Secret");
+                var key = Encoding.ASCII.GetBytes(_Configuration["JwtSettings:Secret"]);
 
                 var claims = new List<Claim>
                 {
@@ -35,9 +35,9 @@ namespace CVMaker.Infrastructure.Authentication
                 {
                     Subject = new ClaimsIdentity(claims),
                     Expires = DateTime.UtcNow.AddMinutes(
-                        double.Parse(_Configuration["_jwtSettings.JwtExpirationMinutes"])),
-                    Issuer = _Configuration["_jwtSettings.Secret"],
-                    Audience = _Configuration["_jwtSettings.Secret"],
+                        double.Parse(_Configuration["JwtSettings:JwtExpirationMinutes"])),
+                    Issuer = _Configuration["JwtSettings:Secret"],
+                    Audience = _Configuration["JwtSettings:Secret"],
                     SigningCredentials = new SigningCredentials(
                         new SymmetricSecurityKey(key),
                         SecurityAlgorithms.HmacSha256Signature)
@@ -46,5 +46,8 @@ namespace CVMaker.Infrastructure.Authentication
                 var token = tokenHandler.CreateToken(tokenDescriptor);
                 return tokenHandler.WriteToken(token);
 
-            }} } 
+            }
+            
+            }
+} 
     

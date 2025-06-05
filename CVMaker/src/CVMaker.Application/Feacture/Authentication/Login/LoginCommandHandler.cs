@@ -34,18 +34,18 @@ namespace CVMaker.Application.Features.Authentication.Login
                     .FirstOrDefaultAsync(u => u.Email == request.Email, cancellationToken);
 
                 if (user == null)
-                {
+                
                     return Result.Failure<LoginResponse>(Error.Problem(
                         "InvalidCredentials",
                         "Invalid email or password."));
-                }
+                
 
                 if (!_passwordHasher.Verify(request.Password, user.HashPassword, user.HashSalting))
-                {
+                
                     return Result.Failure<LoginResponse>(Error.Problem(
                         "InvalidCredentials",
                         "Invalid email or password."));
-                }
+                
 
                 var token = _jwtProvider.GenerateToken(user);
 

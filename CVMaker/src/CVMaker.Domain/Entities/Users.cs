@@ -12,6 +12,7 @@ namespace CVMaker.Domain.Entities
             Email = email;
             PhoneNumber = phoneNumber;
             HashPassword = hashPassword;
+            Tag = GenerateTag();
             HashSalting = hashSalting;
             CreatedAt = DateTime.UtcNow;
             ExternalId = Guid.NewGuid();

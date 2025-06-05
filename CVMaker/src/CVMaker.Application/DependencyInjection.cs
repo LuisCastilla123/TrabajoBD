@@ -19,6 +19,7 @@ namespace CVMaker.Application
 
             services.AddValidatorsFromAssembly(typeof(DependencyInjection).Assembly, includeInternalTypes: true);
 
+            services.RegisterServicesFromAttributes(typeof(DependencyInjection).Assembly);
             return services;
         }
     }

@@ -15,7 +15,7 @@ builder.Services.AddControllers().AddJsonOptions(opts =>
 {
     opts.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
 });
-
+builder.Services.AddSwaggerGenWithAuth();
 // Configurar Swagger y definir el documento "v1".
 builder.Services.AddSwaggerGen(c =>
 {
@@ -34,7 +34,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
-        builder.Services.AddSwaggerGenWithAuth();
+        
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "CVMaker API V1");
         // Con RoutePrefix vacío, Swagger UI se muestra en la raíz.
         c.RoutePrefix = string.Empty;

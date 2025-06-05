@@ -3,47 +3,45 @@ using Microsoft.OpenApi.Models;
 
 namespace CVMaker.API.Extensions;
 
+
 internal static class ServiceCollectionExtensions
 {
-
-internal static IServiceCollection AddSwaggerGenWithAuth(this IServiceCollection services)
-
-{
-    services.AddSwaggerGen(o =>
-
+    internal static IServiceCollection AddSwaggerGenWithAuth(this IServiceCollection services)
     {
-        o.CustomSchemaIds(id => id.FullName!.Replace('+', '-'));
-
-        var securityScheme = new OpenApiSecurityScheme
+        services.AddSwaggerGen(o =>
         {
-            Name = "JWT Authentication",
-            Description = "Enter your JWT Token in this field",
-            In = ParameterLocation.Header,
-            Type = SecuritySchemeType.Http,
-            Scheme = JwtBearerDefaults.AuthenticationScheme,
-            BearerFormat = "JWT",
-            Reference = new OpenApiReference
+            o.CustomSchemaIds(id => id.FullName!.Replace('+', '-'));
+
+            var securityScheme = new OpenApiSecurityScheme
             {
-                Type = ReferenceType.SecurityScheme,
-                Id = JwtBearerDefaults.AuthenticationScheme
-            }
-        };
+                Name = "JWT Authentication",
+                Description = "Enter your JWT Token in this field",
+                In = ParameterLocation.Header,
+                Type = SecuritySchemeType.Http,
+                Scheme = JwtBearerDefaults.AuthenticationScheme,
+                BearerFormat = "JWT"
+            };
 
-        o.AddSecurityDefinition(JwtBearerDefaults.AuthenticationScheme, securityScheme);
+            o.AddSecurityDefinition(JwtBearerDefaults.AuthenticationScheme, securityScheme);
 
-        var securityRequirement = new OpenApiSecurityRequirement
-        {
+            var securityRequirement = new OpenApiSecurityRequirement
             {
-                securityScheme,
-                new string[] {}
-            }
-        };
+                {
+                    new OpenApiSecurityScheme
+                    {
+                        Reference = new OpenApiReference
+                        {
+                            Type = ReferenceType.SecurityScheme,
+                            Id = JwtBearerDefaults.AuthenticationScheme
+                        }
+                    },
+                    new string[] { }    
+                }
+            };
 
-        o.AddSecurityRequirement(securityRequirement);
+            o.AddSecurityRequirement(securityRequirement);
+        });
 
-    });
-
-    return services;
-}
-
+        return services;
+    }
 }

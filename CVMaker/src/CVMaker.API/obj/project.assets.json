@@ -5093,8 +5093,8 @@
     },
     "CVMaker.SharedKernel/1.0.0": {
       "type": "project",
-      "path": "../CVMaker.Sharedkernel/CVMaker.SharedKernel.csproj",
-      "msbuildProject": "../CVMaker.Sharedkernel/CVMaker.SharedKernel.csproj"
+      "path": "../CVMaker.SharedKernel/CVMaker.SharedKernel.csproj",
+      "msbuildProject": "../CVMaker.SharedKernel/CVMaker.SharedKernel.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5139,8 +5139,8 @@
             "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Infrastructure\\CVMaker.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Infrastructure\\CVMaker.Infrastructure.csproj"
             },
-            "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Sharedkernel\\CVMaker.SharedKernel.csproj": {
-              "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Sharedkernel\\CVMaker.SharedKernel.csproj"
+            "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj": {
+              "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj"
             }
           }
         }
