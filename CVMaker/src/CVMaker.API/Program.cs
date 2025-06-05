@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using CVMaker.API.Extensions;
 using CVMaker.Application;
 using CVMaker.Infrastructure;
 using Microsoft.OpenApi.Models;
@@ -33,12 +34,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
+        builder.Services.AddSwaggerGenWithAuth();
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "CVMaker API V1");
         // Con RoutePrefix vacío, Swagger UI se muestra en la raíz.
         c.RoutePrefix = string.Empty;
     });
 }
-
+app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();

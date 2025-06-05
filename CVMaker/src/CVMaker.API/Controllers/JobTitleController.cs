@@ -2,6 +2,7 @@ using CVMaker.API.Extensions;
 using CVMaker.Application.Features.Degrees.Create;
 using CVMaker.Domain.Entities;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CVMaker.API.Controllers
@@ -9,6 +10,7 @@ namespace CVMaker.API.Controllers
 
     [ApiController]
     [Route("[controller]")]
+    [Authorize]
     public class JobTitlesContoller : ControllerBase
     {
         private readonly ISender _mediator;

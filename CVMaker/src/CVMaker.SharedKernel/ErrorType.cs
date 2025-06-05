@@ -7,6 +7,6 @@ public enum ErrorType
     Problem = 2,
     NotFound = 3,
     Conflict = 4,
-    forbidden =5
-    
+    forbidden =5,
+    Validation = 6
 }

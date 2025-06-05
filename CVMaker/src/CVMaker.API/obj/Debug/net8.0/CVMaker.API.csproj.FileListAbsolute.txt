@@ -181,3 +181,4 @@ C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.API\obj\Debug\net8.0\refint\CVMake
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.API\obj\Debug\net8.0\CVMaker.API.pdb
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.API\obj\Debug\net8.0\CVMaker.API.genruntimeconfig.cache
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.API\obj\Debug\net8.0\ref\CVMaker.API.dll
+C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

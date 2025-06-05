@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IEg+/KskvkA=",
+  "dgSpecHash": "gNGFcjuc+CI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Sharedkernel\\CVMaker.SharedKernel.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -28,7 +28,7 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
         builder.Property(e => e.Tag)
             .HasMaxLength(100)
             .HasColumnName("tag");
-
+ 
         builder.Property(e => e.Email)
             .HasMaxLength(250)
             .HasColumnName("email");
@@ -48,7 +48,7 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
 
         builder.Property(e => e.HashPassword)
             .HasMaxLength(500)
-            .HasColumnName("hashedpassword");
+            .HasColumnName("hashpassword");
 
         builder.Property(e => e.CreatedAt)
             .HasColumnType("datetime2")
@@ -78,13 +78,11 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
             .WithOne(us => us.User)
             .HasForeignKey<UsersSkills>(us => us.UserId);
 
-            builder.Property(e => e.HashPassword)
-            .HasMaxLength(500)
-            .HasColumnName("hash_salting");
-
+            
             builder.Property(e => e.HashSalting)
             .HasMaxLength(500)
             .HasColumnName("hash_salting");
+
 
 
         builder

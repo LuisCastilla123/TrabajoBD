@@ -1,11 +1,13 @@
 using CVMaker.API.Extensions;
 using CVMaker.Application.Features.AcademicFields.Create;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CVMaker.API.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("[controller]")]
     public class AcademicFieldController : ControllerBase
     {

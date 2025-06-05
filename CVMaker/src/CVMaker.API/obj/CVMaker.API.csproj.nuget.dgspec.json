@@ -32,8 +32,8 @@
               "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Infrastructure\\CVMaker.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Infrastructure\\CVMaker.Infrastructure.csproj"
               },
-              "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj": {
-                "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj"
+              "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Sharedkernel\\CVMaker.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Sharedkernel\\CVMaker.SharedKernel.csproj"
               }
             }
           }
@@ -120,8 +120,8 @@
               "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Domain\\CVMaker.Domain.csproj": {
                 "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Domain\\CVMaker.Domain.csproj"
               },
-              "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj": {
-                "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj"
+              "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Sharedkernel\\CVMaker.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Sharedkernel\\CVMaker.SharedKernel.csproj"
               }
             }
           }
@@ -337,14 +337,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj": {
+    "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Sharedkernel\\CVMaker.SharedKernel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Sharedkernel\\CVMaker.SharedKernel.csproj",
         "projectName": "CVMaker.SharedKernel",
-        "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj",
+        "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Sharedkernel\\CVMaker.SharedKernel.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.SharedKernel\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Sharedkernel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
