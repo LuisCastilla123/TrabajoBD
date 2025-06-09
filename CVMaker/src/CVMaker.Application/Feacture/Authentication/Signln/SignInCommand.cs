@@ -9,9 +9,9 @@ public record SignInCommand(
 string UserName,
 
 string Email,
-
+string Location,
 string PhoneNumber,
-
+string? About,
 string Password
 
 ): ICommand;

@@ -40,6 +40,7 @@ if (app.Environment.IsDevelopment())
         c.RoutePrefix = string.Empty;
     });
 }
+app.UseCors();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
