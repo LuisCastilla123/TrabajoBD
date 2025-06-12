@@ -1,0 +1,137 @@
+<div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
+    <div class="w-full max-w-md bg-white rounded-xl shadow-2xl overflow-hidden">
+        <!-- Header con título -->
+        <div class="bg-indigo-600 p-6 text-center">
+            <h1 class="text-3xl font-bold text-white">CVMaker</h1>
+            <p class="text-indigo-100 mt-1">Crea tu cuenta para empezar</p>
+        </div>
+
+        <!-- Formulario de Registro -->
+        <form [formGroup]="form" (ngSubmit)="onSubmit()" class="p-8 space-y-4">
+            <!-- Nombre de Usuario -->
+            <div>
+                <label for="userName" class="block text-sm font-medium text-gray-700 mb-1">Nombre completo</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <input type="text" id="userName" name="userName" formControlName="userName"
+                        class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500
+                         focus:border-indigo-500 transition duration-200"
+                        placeholder="Nombre y apellidos" required>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo Electrónico</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                        </svg>
+                    </div>
+                    <input type="email" id="email" name="email" formControlName="email"
+                        class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500
+                         focus:border-indigo-500 transition duration-200"
+                        placeholder="tucorreo@ejemplo.com" required>
+                </div>
+            </div>
+
+            <!-- Teléfono -->
+            <div>
+                <label for="phoneNumber" class="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M7 2a2 2 0 00-2 2v12a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7zm3 14a1 1 0 100-2 1 1 0 000 2z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" formControlName="phoneNumber"
+                        class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500
+                         focus:border-indigo-500 transition duration-200"
+                        placeholder="0000-0000" required>
+                </div>
+            </div>
+
+            <!-- Ubicación -->
+            <div>
+                <label for="location" class="block text-sm font-medium text-gray-700 mb-1">Ubicación</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <input type="text" id="location" name="location" formControlName="location"
+                        class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500
+                         focus:border-indigo-500 transition duration-200"
+                        placeholder="Ciudad, País" required>
+                </div>
+            </div>
+
+            <!-- Sobre ti -->
+            <div>
+                <label for="about" class="block text-sm font-medium text-gray-700 mb-1">Sobre ti</label>
+                <textarea id="about" name="about" rows="3" formControlName="about"
+                    class="block w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500
+                     focus:border-indigo-500 transition duration-200"
+                    placeholder="Breve descripción sobre ti" required></textarea>
+            </div>
+
+            <!-- Contraseña -->
+            <div>
+                <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Contraseña</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <input type="password" id="password" name="password" formControlName="password"
+                        class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500
+                         focus:border-indigo-500 transition duration-200"
+                        placeholder="••••••••" required>
+                </div>
+                <p class="mt-1 text-xs text-gray-500">Mínimo 8 caracteres</p>
+            </div>
+
+            <!-- Términos y Condiciones -->
+            <div class="flex items-start">
+                <div class="flex items-center h-5">
+                    <input id="terms" name="terms" type="checkbox"
+                        class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded" required>
+                </div>
+                <div class="ml-3 text-sm">
+                    <label for="terms" class="font-medium text-gray-700">Acepto los </label>
+                    <a href="#" class="text-indigo-600 hover:text-indigo-500">términos y condiciones</a>
+                </div>
+            </div>
+
+            <!-- Botón de Registro -->
+            <div class="pt-2">
+                <button type="submit"
+                    class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-indigo-600
+                     hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-200">
+                    Registrarse
+                </button>
+            </div>
+
+            <!-- Enlace a Login -->
+            <div class="text-center text-sm text-gray-600 pt-2">
+                ¿Ya tienes una cuenta?
+                <a [routerLink]="['/login']" class="font-medium text-indigo-600 hover:text-indigo-500">Inicia sesión aquí</a>
+            </div>
+        </form>
+    </div>
+</div>

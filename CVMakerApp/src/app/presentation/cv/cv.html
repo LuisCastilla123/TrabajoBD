@@ -1,0 +1,184 @@
+<!-- Header de la aplicación -->
+<header class="bg-indigo-800 text-white shadow-lg">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            <h1 class="text-2xl font-bold">CVMaker</h1>
+        </div>
+        <button class="flex items-center space-x-1 bg-indigo-700 hover:bg-indigo-600 px-4 py-2 rounded-lg transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+            </svg>
+            <span>Cerrar sesión</span>
+        </button>
+    </div>
+</header>
+
+<!-- Contenido principal del CV -->
+<div class="min-h-screen bg-gray-50 py-8 px-4">
+    <!-- Contenedor principal del CV -->
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        <!-- Encabezado del CV -->
+        <div class="bg-indigo-700 text-white p-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div>
+                    <h1 class="text-3xl font-bold">Juan Martínez López</h1>
+                    <p class="text-indigo-100 mt-1">{{ 'juan.martinez@example.com' }}</p>
+                    <p class="text-indigo-100">5678-9012</p>
+                    <p class="text-indigo-100 mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline mr-1" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        Juigalpa, Nicaragua
+                    </p>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <div
+                        class="h-24 w-24 bg-white rounded-full flex items-center justify-center text-indigo-700 font-bold text-xl">
+                        JML
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cuerpo del CV -->
+        <div class="p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Columna izquierda -->
+            <div class="md:col-span-2 space-y-8">
+                <!-- Experiencia Laboral -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-200 pb-2 mb-4">Experiencia
+                        Laboral</h2>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800">Tech Solutions S.L.</h3>
+                                <p class="text-indigo-600">Desarrollador Backend Senior</p>
+                            </div>
+                            <div class="text-gray-500 text-sm">
+                                Jul 2021 - Actual
+                            </div>
+                        </div>
+                        <p class="mt-2 text-gray-700">
+                            Liderazgo del equipo backend en proyectos con Node.js y Python. Diseño e implementación de
+                            APIs RESTful. Optimización de bases de datos y consultas SQL.
+                        </p>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800">Digital Innovators</h3>
+                                <p class="text-indigo-600">Desarrollador Full Stack</p>
+                            </div>
+                            <div class="text-gray-500 text-sm">
+                                Ene 2019 - Jun 2021
+                            </div>
+                        </div>
+                        <p class="mt-2 text-gray-700">
+                            Desarrollo de aplicaciones web completas con React y Node.js. Implementación de sistemas de
+                            autenticación y autorización. Mantenimiento de bases de datos MongoDB y PostgreSQL.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Historial Académico -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-200 pb-2 mb-4">Formación
+                        Académica</h2>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800">Universidad Nacional de Ingeniería</h3>
+                                <div class="flex flex-wrap gap-2 mt-1">
+                                    <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-sm">Máster
+                                        Universitario</span>
+                                    <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-sm">Ingeniería de
+                                        Software</span>
+                                </div>
+                            </div>
+                            <div class="text-gray-500 text-sm">
+                                Sep 2017 - Jun 2018
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Columna derecha -->
+            <div class="space-y-8">
+                <!-- Habilidades -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-200 pb-2 mb-4">Habilidades</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Node.js</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Python</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Django</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">SQL</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Docker</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Git</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">AWS</span>
+                    </div>
+                </section>
+
+                <!-- Idiomas -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-200 pb-2 mb-4">Idiomas</h2>
+                    <div class="mb-3">
+                        <div class="flex justify-between items-center">
+                            <span class="font-medium">Inglés</span>
+                            <span class="text-sm bg-gray-100 px-2 py-1 rounded">Avanzado (C1)</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="flex justify-between items-center">
+                            <span class="font-medium">Español</span>
+                            <span class="text-sm bg-gray-100 px-2 py-1 rounded">Nativo</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Información Adicional -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-200 pb-2 mb-4">Perfil
+                        Profesional</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Desarrollador Backend con más de 5 años de experiencia en creación de APIs y servicios web
+                        escalables.
+                        Especializado en tecnologías como Node.js y Python, con sólidos conocimientos en arquitectura de
+                        microservicios
+                        y bases de datos. Experiencia en despliegue de aplicaciones en la nube (AWS) y containerización
+                        con Docker.
+                        Capacidad para liderar equipos técnicos y colaborar en metodologías Agile.
+                    </p>
+                </section>
+            </div>
+        </div>
+
+        <!-- Pie de página -->
+        <div class="bg-gray-100 p-4 text-center text-gray-600 text-sm">
+            CV generado con CVMaker - 20 de junio de 2023
+        </div>
+    </div>
+
+    <!-- Botones de acción -->
+    <div class="max-w-4xl mx-auto mt-6 flex justify-end gap-4">
+        <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg transition">
+            Descargar PDF
+        </button>
+    </div>
+</div>
