@@ -1,4 +1,6 @@
 
+using System.Security.Cryptography.X509Certificates;
+
 namespace CVMaker.Domain.Entities
 {
     public class User
@@ -6,7 +8,7 @@ namespace CVMaker.Domain.Entities
         public User() { }
 
         // Constructor principal
-        public User(string userName, string email, string phoneNumber, byte[] hashPassword,byte[] hashSalting)
+        public User(string userName, string email, string phoneNumber, byte[] hashPassword, byte[] hashSalting, string location, string? about)
         {
             Username = userName;
             Email = email;
@@ -16,12 +18,21 @@ namespace CVMaker.Domain.Entities
             HashSalting = hashSalting;
             CreatedAt = DateTime.UtcNow;
             ExternalId = Guid.NewGuid();
+            AddInfo(location, about);
         }
 
+        
         // Método de fábrica
-        public static User Create(string userName, string email, string phoneNumber, byte[] hashPassword, byte[] hashSalting)
+        public User AddInfo(string location, string about = null)
         {
-            return new User(userName, email, phoneNumber, hashPassword, hashSalting);
+            var userInfo = Entities.UsersInfo.Create(UserId, location, about);
+            UserInfo.Add(userInfo);
+            return this;
+        }
+
+        public static User Create(string userName, string email, string phoneNumber, byte[] hashPassword, byte[] hashSalting, string location, string about = null)
+        {
+            return new User(userName, email, phoneNumber, hashPassword, hashSalting, location, about);
         }
 
         // Método personalizado (simulado según tu mención "Tag GenerateLog")
@@ -44,7 +55,7 @@ namespace CVMaker.Domain.Entities
         public ICollection<AcademicHistory>? AcademicHistory { get; set; } = new List<AcademicHistory>();
         public ICollection<WorkExperiences>? WorkExperience { get; set; } = new List<WorkExperiences>();
         public ICollection<UsersInfo>? UserInfo { get; set; } = new List<UsersInfo>();
-        public UsersSkills UserSkills { get; set; }
+        public ICollection<UsersSkills>? UsersSkills { get; set; } = new List<UsersSkills>();
 
         private string GenerateTag()
         {
@@ -53,6 +64,15 @@ namespace CVMaker.Domain.Entities
             .ToUpper();
             var guidSuffix = ExternalId.ToString().Split('-').Last();
             return $"{initials}{guidSuffix}";
+        }
+
+        public void AddSkill(long SkillId)
+        {
+            UsersSkills.Add(new UsersSkills
+            {
+                SkillId = SkillId,
+                UserId = UserId
+            });
         }
     }
 

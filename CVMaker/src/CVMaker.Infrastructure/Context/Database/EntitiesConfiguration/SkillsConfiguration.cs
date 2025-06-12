@@ -31,9 +31,7 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
                 .HasColumnType("datetime2")
                 .HasColumnName("updatedat");
 
-            builder.HasMany(e => e.UserSkills)
-                .WithOne(e => e.Skill)
-                .HasForeignKey(e => e.SkillId);
+            
 
             builder
             .HasMany(af => af.UserSkills)

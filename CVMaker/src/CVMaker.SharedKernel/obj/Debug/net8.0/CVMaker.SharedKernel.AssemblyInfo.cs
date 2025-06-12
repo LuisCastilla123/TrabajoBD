@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CVMaker.SharedKernel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+256c46d26e907cae5635b1e108f65a33f63ad33d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+742cb20bf8b0530c815f68533bea3242de5c63f6")]
 [assembly: System.Reflection.AssemblyProductAttribute("CVMaker.SharedKernel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CVMaker.SharedKernel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

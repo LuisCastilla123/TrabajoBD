@@ -36,16 +36,21 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
                 .HasColumnType("datetime2")
                 .HasColumnName("updatedat");
 
-            builder.HasOne(e => e.User)
-                .WithOne()
-                .HasForeignKey<UsersSkills>(e => e.UserId);
+           
 
-            
+
             builder
         .HasOne(af => af.Skill)
         .WithMany(ah => ah.UserSkills)
         .HasForeignKey(ah => ah.SkillId)
         .OnDelete(DeleteBehavior.ClientSetNull);
+        
+         builder
+        .HasOne(af => af.User)
+        .WithMany(ah => ah.UsersSkills)
+        .HasForeignKey(ah => ah.UserId)
+        .OnDelete(DeleteBehavior.ClientSetNull);
+        
         }
     }
 }

@@ -21,7 +21,7 @@ namespace CVMaker.Infrastructure.Authentication
         public string GenerateToken(User user)
         {
                 var tokenHandler = new JwtSecurityTokenHandler();
-                var key = Encoding.ASCII.GetBytes(_Configuration["JwtSettings:Secret"]);
+                var key = Encoding.UTF8.GetBytes(_Configuration["JwtSettings:Secret"]);
 
                 var claims = new List<Claim>
                 {

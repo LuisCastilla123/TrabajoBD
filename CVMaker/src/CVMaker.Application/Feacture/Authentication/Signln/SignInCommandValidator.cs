@@ -38,7 +38,7 @@ public SignInCommandValidator()
             .WithMessage("Password must be at least 8 characters long.");
 
             RuleFor(x => x.About)
-            .MaximumLenght(500)
+            .MaximumLength(500)
             .WithMessage("About section must not exceed 500 characters.");
 
 }

@@ -39,13 +39,7 @@ namespace CVMaker. Infrastructure.Context.EntitiesConfiguration
             .HasColumnType("datetime2")
             .HasColumnName("updatedat");
 
-        builder.HasOne(e => e.UserInfo)
-            .WithMany(u => u.UserInfoLanguage)
-            .HasForeignKey(e => e.UserInfoId);
-
-        builder.HasOne(e => e.Languages)
-            .WithMany(l => l.UserInfoLanguage)
-            .HasForeignKey(e => e.LanguageId);
+    
 
         builder
         .HasOne(af => af.Languages)

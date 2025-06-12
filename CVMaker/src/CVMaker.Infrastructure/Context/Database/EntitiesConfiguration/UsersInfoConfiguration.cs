@@ -36,6 +36,16 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
             .HasMaxLength(200)
             .HasColumnName("state");
 
+            builder.Property(e => e.Location)
+            .HasMaxLength(500)
+            .HasColumnName("location");
+
+            builder.Property(e => e.About)
+            .HasMaxLength(500)
+            .HasColumnName("about");
+
+
+
         builder.Property(e => e.ZipCode)
             .HasMaxLength(50)
             .HasColumnName("zipcode");
@@ -57,13 +67,7 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
             .HasColumnType("datetime2")
             .HasColumnName("updatedat");
 
-        builder.HasOne(e => e.Users)
-            .WithMany(u => u.UserInfo)
-            .HasForeignKey(e => e.UserId);
-
-        builder.HasMany(e => e.UserInfoLanguage)
-            .WithOne(e => e.UserInfo)
-            .HasForeignKey(e => e.UserInfoId);
+       
 
         builder
         .HasMany(af => af.UserInfoLanguage)

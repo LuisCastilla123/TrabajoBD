@@ -58,7 +58,7 @@ public async Task<Result> Handle(SignInCommand request, CancellationToken cancel
             pwHash,
             saltHash,
             request.Location,
-            request.About,
+            request.About
         );
 
         await context.Users.AddAsync(user, cancellationToken);

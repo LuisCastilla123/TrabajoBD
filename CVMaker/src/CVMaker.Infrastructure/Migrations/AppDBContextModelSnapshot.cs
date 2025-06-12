@@ -604,6 +604,12 @@ namespace CVMaker.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("UserInfoId"));
 
+                    b.Property<string>("About")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)")
+                        .HasColumnName("about");
+
                     b.Property<string>("AddressOne")
                         .IsRequired()
                         .HasMaxLength(500)
@@ -639,6 +645,12 @@ namespace CVMaker.Infrastructure.Migrations
                     b.Property<bool>("IsOver18")
                         .HasColumnType("bit")
                         .HasColumnName("isover18");
+
+                    b.Property<string>("Location")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)")
+                        .HasColumnName("location");
 
                     b.Property<string>("State")
                         .IsRequired()
@@ -734,9 +746,15 @@ namespace CVMaker.Infrastructure.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("createdat");
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)")
+                        .HasColumnName("description");
+
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2")
-                        .HasColumnName("enddate");
+                        .HasColumnName("end_date");
 
                     b.Property<string>("EnterpriseName")
                         .IsRequired()
@@ -750,7 +768,7 @@ namespace CVMaker.Infrastructure.Migrations
                         .HasColumnName("externalid")
                         .HasDefaultValueSql("NEWID()");
 
-                    b.Property<long>("JobTitleId")
+                    b.Property<long?>("JobTitleId")
                         .HasColumnType("bigint")
                         .HasColumnName("jobtitleid");
 
@@ -762,7 +780,7 @@ namespace CVMaker.Infrastructure.Migrations
 
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2")
-                        .HasColumnName("startdate");
+                        .HasColumnName("start_date");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
@@ -815,20 +833,12 @@ namespace CVMaker.Infrastructure.Migrations
                         .HasColumnType("bigint")
                         .HasColumnName("userid");
 
-                    b.Property<long?>("UserId1")
-                        .HasColumnType("bigint");
-
                     b.HasKey("UserSkillId")
                         .HasName("users_skills_pkey");
 
                     b.HasIndex("SkillId");
 
-                    b.HasIndex("UserId")
-                        .IsUnique();
-
-                    b.HasIndex("UserId1")
-                        .IsUnique()
-                        .HasFilter("[UserId1] IS NOT NULL");
+                    b.HasIndex("UserId");
 
                     b.HasIndex(new[] { "ExternalID" }, "users_skills_externalid_key")
                         .IsUnique();
@@ -891,8 +901,7 @@ namespace CVMaker.Infrastructure.Migrations
                 {
                     b.HasOne("CVMaker.Domain.Entities.JobTitles", "JobTitle")
                         .WithMany("WorkExperience")
-                        .HasForeignKey("JobTitleId")
-                        .IsRequired();
+                        .HasForeignKey("JobTitleId");
 
                     b.HasOne("CVMaker.Domain.Entities.User", "Users")
                         .WithMany("WorkExperience")
@@ -912,14 +921,9 @@ namespace CVMaker.Infrastructure.Migrations
                         .IsRequired();
 
                     b.HasOne("CVMaker.Domain.Entities.User", "User")
-                        .WithOne()
-                        .HasForeignKey("UsersSkills", "UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .WithMany("UsersSkills")
+                        .HasForeignKey("UserId")
                         .IsRequired();
-
-                    b.HasOne("CVMaker.Domain.Entities.User", null)
-                        .WithOne("UserSkills")
-                        .HasForeignKey("UsersSkills", "UserId1");
 
                     b.Navigation("Skill");
 
@@ -957,8 +961,7 @@ namespace CVMaker.Infrastructure.Migrations
 
                     b.Navigation("UserInfo");
 
-                    b.Navigation("UserSkills")
-                        .IsRequired();
+                    b.Navigation("UsersSkills");
 
                     b.Navigation("WorkExperience");
                 });

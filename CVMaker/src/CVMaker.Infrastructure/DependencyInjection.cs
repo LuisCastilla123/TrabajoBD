@@ -30,19 +30,20 @@ namespace CVMaker.Infrastructure
 
             services.AddScoped<IApplicationDBContext>(provider => provider.GetRequiredService<AppDBContext>());
 
-            
-        services.AddCors(options =>
-        {
-            var origin = configuration.GetSection("AllowerdCors").Get<string[]>()
-            options.AddDefaultPolicy(builder =>
-                builder.WithOrigins(origin)
-                .AllowAnyMethod()
-                .setIsOriginAllowed((host)=>true)
-                .AllowAnyHeader()
-                .AllowCredentials());
-                
-            
-        })
+
+            services.AddCors(options =>
+            {
+                var origin = configuration.GetSection("AllowerdCors").Get<string[]>();
+    
+                options.AddDefaultPolicy(builder =>
+                    builder.WithOrigins(origin)
+                    .AllowAnyMethod()
+                    .SetIsOriginAllowed((host) => true)
+                    .AllowAnyHeader()
+                    .AllowCredentials());
+
+
+            });
 
         services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         .AddJwtBearer(Options =>

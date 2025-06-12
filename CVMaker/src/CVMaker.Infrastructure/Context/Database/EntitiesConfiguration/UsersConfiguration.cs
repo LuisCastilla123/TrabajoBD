@@ -62,22 +62,7 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
             .HasColumnType("datetime2")
             .HasColumnName("deletedat");
 
-        builder.HasMany(e => e.AcademicHistory)
-            .WithOne(e => e.Users)
-            .HasForeignKey(e => e.UserId);
-
-        builder.HasMany(e => e.WorkExperience)
-            .WithOne(e => e.Users)
-            .HasForeignKey(e => e.UserId);
-
-        builder.HasMany(e => e.UserInfo)
-            .WithOne(e => e.Users)
-            .HasForeignKey(e => e.UserId);
-
-        builder.HasOne(e => e.UserSkills)
-            .WithOne(us => us.User)
-            .HasForeignKey<UsersSkills>(us => us.UserId);
-
+       
             
             builder.Property(e => e.HashSalting)
             .HasMaxLength(500)
@@ -97,11 +82,11 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
         .OnDelete(DeleteBehavior.ClientSetNull);
 
         builder
-        .HasMany(af => af.AcademicHistory)
-        .WithOne(ah => ah.Users)
-        .HasForeignKey(ah => ah.UserId)
+        .HasMany(af => af.UsersSkills)
+        .WithOne(ah => ah.User)
+        .HasForeignKey(ah => ah.UserId     )
         .OnDelete(DeleteBehavior.ClientSetNull);
-
+        
         builder
         .HasMany(af => af.WorkExperience)
         .WithOne(ah => ah.Users)
