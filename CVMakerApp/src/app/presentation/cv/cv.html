@@ -9,7 +9,8 @@
             </svg>
             <h1 class="text-2xl font-bold">CVMaker</h1>
         </div>
-        <button class="flex items-center space-x-1 bg-indigo-700 hover:bg-indigo-600 px-4 py-2 rounded-lg transition">
+        <button (click)="logout()"
+            class="flex items-center space-x-1 bg-indigo-700 hover:bg-indigo-600 px-4 py-2 rounded-lg transition">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -28,8 +29,8 @@
         <div class="bg-indigo-700 text-white p-8">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
                 <div>
-                    <h1 class="text-3xl font-bold">Juan Martínez López</h1>
-                    <p class="text-indigo-100 mt-1">{{ 'juan.martinez@example.com' }}</p>
+                    <h1 class="text-3xl font-bold">{{ cv.user.userName }}</h1>
+                    <p class="text-indigo-100 mt-1">{{ cv.user.email }}</p>
                     <p class="text-indigo-100">5678-9012</p>
                     <p class="text-indigo-100 mt-2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline mr-1" fill="none"
@@ -39,13 +40,13 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
-                        Juigalpa, Nicaragua
+                        {{ cv.user.userInfo?.location }}
                     </p>
                 </div>
                 <div class="mt-4 md:mt-0">
                     <div
                         class="h-24 w-24 bg-white rounded-full flex items-center justify-center text-indigo-700 font-bold text-xl">
-                        JML
+                        {{ getUserInitials() }}
                     </div>
                 </div>
             </div>
@@ -57,40 +58,32 @@
             <div class="md:col-span-2 space-y-8">
                 <!-- Experiencia Laboral -->
                 <section>
-                    <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-200 pb-2 mb-4">Experiencia
-                        Laboral</h2>
+                    <div class="flex justify-between items-center mb-4 border-b-2 border-indigo-200">
+                        <h2 class="text-2xl font-bold text-gray-800 pb-2">Experiencia Laboral</h2>
+                        <button (click)="showAddExperience = true"
+                            class="w-8 h-8 font-bold hover:bg-indigo-100 text-indigo-800 text-2xl rounded-full flex items-center justify-center leading-none"
+                            title="Añadir experiencia">
+                            +
+                        </button>
+                    </div>
 
+                    @for (item of cv.user.workExperiences; track $index) {
                     <div class="mb-6">
                         <div class="flex justify-between items-start">
                             <div>
-                                <h3 class="text-xl font-semibold text-gray-800">Tech Solutions S.L.</h3>
-                                <p class="text-indigo-600">Desarrollador Backend Senior</p>
+                                <h3 class="text-xl font-semibold text-gray-800">{{ item.enterpriseName }}</h3>
+                                <p class="text-indigo-600">{{ item.jobTitle?.name }}</p>
                             </div>
                             <div class="text-gray-500 text-sm">
-                                Jul 2021 - Actual
+                                {{ item.startDate | date:'MMM yyyy' }} - {{ item.endDate ? (item.endDate | date:'MMM
+                                yyyy') : 'Actualidad' }}
                             </div>
                         </div>
                         <p class="mt-2 text-gray-700">
-                            Liderazgo del equipo backend en proyectos con Node.js y Python. Diseño e implementación de
-                            APIs RESTful. Optimización de bases de datos y consultas SQL.
+                            {{ item.description }}
                         </p>
                     </div>
-
-                    <div class="mb-6">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-xl font-semibold text-gray-800">Digital Innovators</h3>
-                                <p class="text-indigo-600">Desarrollador Full Stack</p>
-                            </div>
-                            <div class="text-gray-500 text-sm">
-                                Ene 2019 - Jun 2021
-                            </div>
-                        </div>
-                        <p class="mt-2 text-gray-700">
-                            Desarrollo de aplicaciones web completas con React y Node.js. Implementación de sistemas de
-                            autenticación y autorización. Mantenimiento de bases de datos MongoDB y PostgreSQL.
-                        </p>
-                    </div>
+                    }
                 </section>
 
                 <!-- Historial Académico -->
@@ -99,20 +92,23 @@
                         Académica</h2>
 
                     <div class="mb-6">
+                        @for (item of cv.user.academicHistories; track $index) {
                         <div class="flex justify-between items-start">
                             <div>
-                                <h3 class="text-xl font-semibold text-gray-800">Universidad Nacional de Ingeniería</h3>
+                                <h3 class="text-xl font-semibold text-gray-800">{{ item.institutionName }}</h3>
                                 <div class="flex flex-wrap gap-2 mt-1">
-                                    <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-sm">Máster
-                                        Universitario</span>
-                                    <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-sm">Ingeniería de
-                                        Software</span>
+                                    <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-sm">{{
+                                        item.degree?.name }}</span>
+                                    <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-sm">{{
+                                        item.academicField?.name }}</span>
                                 </div>
                             </div>
                             <div class="text-gray-500 text-sm">
-                                Sep 2017 - Jun 2018
+                                {{ item.startDate | date:'MMM yyyy' }} - {{ item.endDate ? (item.endDate | date:'MMM
+                                yyyy') : 'Actualidad' }}
                             </div>
                         </div>
+                        }
                     </div>
                 </section>
             </div>
@@ -121,35 +117,33 @@
             <div class="space-y-8">
                 <!-- Habilidades -->
                 <section>
-                    <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-200 pb-2 mb-4">Habilidades</h2>
+                    <div class="flex justify-between items-center mb-4 border-b-2 border-indigo-200">
+                        <h2 class="text-2xl font-bold text-gray-800 pb-2">Habilidades</h2>
+                        <button (click)="showAddSkill = true"
+                            class="w-8 h-8 font-bold hover:bg-indigo-100 text-indigo-800 text-2xl
+                            rounded-full flexitems-center justify-center leading-none"
+                            title="Añadir habilidad">
+                            +
+                        </button>
+                    </div>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Node.js</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Python</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Django</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">SQL</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">MongoDB</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Docker</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Git</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">AWS</span>
+                        @for (item of cv.user.userInfo?.skills; track $index) {
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">{{ item.name
+                            }}</span>
+                        }
                     </div>
                 </section>
 
                 <!-- Idiomas -->
                 <section>
                     <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-200 pb-2 mb-4">Idiomas</h2>
+                    @for (item of cv.user.userInfo?.languages; track $index) {
                     <div class="mb-3">
                         <div class="flex justify-between items-center">
-                            <span class="font-medium">Inglés</span>
-                            <span class="text-sm bg-gray-100 px-2 py-1 rounded">Avanzado (C1)</span>
+                            <span class="font-medium">{{ item.name }}</span>
                         </div>
                     </div>
-                    <div class="mb-3">
-                        <div class="flex justify-between items-center">
-                            <span class="font-medium">Español</span>
-                            <span class="text-sm bg-gray-100 px-2 py-1 rounded">Nativo</span>
-                        </div>
-                    </div>
+                    }
                 </section>
 
                 <!-- Información Adicional -->
@@ -157,13 +151,7 @@
                     <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-indigo-200 pb-2 mb-4">Perfil
                         Profesional</h2>
                     <p class="text-gray-700 leading-relaxed">
-                        Desarrollador Backend con más de 5 años de experiencia en creación de APIs y servicios web
-                        escalables.
-                        Especializado en tecnologías como Node.js y Python, con sólidos conocimientos en arquitectura de
-                        microservicios
-                        y bases de datos. Experiencia en despliegue de aplicaciones en la nube (AWS) y containerización
-                        con Docker.
-                        Capacidad para liderar equipos técnicos y colaborar en metodologías Agile.
+                        {{ cv.user.userInfo?.about }}
                     </p>
                 </section>
             </div>
@@ -171,7 +159,7 @@
 
         <!-- Pie de página -->
         <div class="bg-gray-100 p-4 text-center text-gray-600 text-sm">
-            CV generado con CVMaker - 20 de junio de 2023
+            Última actualización {{ cv.updatedAt | date:'dd/MM/yyyy' }}
         </div>
     </div>
 
@@ -182,3 +170,16 @@
         </button>
     </div>
 </div>
+<app-add-skill
+    *ngIf="showAddSkill"
+    [availableSkills]="globalOptions.skills"
+    (skillAdded)="onSkillAdded($event)"
+    (canceled)="showAddSkill = false"
+/>
+
+<app-add-work-experience
+  *ngIf="showAddExperience"
+  [availableJobTitles]="globalOptions.jobtitles"
+  (experienceAdded)="onExperienceAdded()"
+  (canceled)="showAddExperience = false"
+/>

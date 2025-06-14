@@ -1,16 +1,16 @@
 USE master;
 GO
 
-IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'CVMakerDB')
+IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'BaseDatos2')
 BEGIN
 
-CREATE DATABASE CVMakerDB;
-PRINT 'Base de datos CVMakerDB creada exitosamente.';
+CREATE DATABASE BaseDatos2;
+PRINT 'Base de datos BaseDatos2 creada exitosamente.';
 END
 
 ELSE
 BEGIN
-PRINT 'La base de datos CVMakerDB ya existe.';
+PRINT 'La base de datos BaseDatos2 ya existe.';
 END
 
 GO

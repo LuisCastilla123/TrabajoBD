@@ -36,8 +36,8 @@ namespace CVMaker.Infrastructure.Authentication
                     Subject = new ClaimsIdentity(claims),
                     Expires = DateTime.UtcNow.AddMinutes(
                         double.Parse(_Configuration["JwtSettings:JwtExpirationMinutes"])),
-                    Issuer = _Configuration["JwtSettings:Secret"],
-                    Audience = _Configuration["JwtSettings:Secret"],
+                    Issuer = _Configuration["JwtSettings:Issuer"],
+                    Audience = _Configuration["JwtSettings:Audience"],
                     SigningCredentials = new SigningCredentials(
                         new SymmetricSecurityKey(key),
                         SecurityAlgorithms.HmacSha256Signature)

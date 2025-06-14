@@ -29,10 +29,10 @@ namespace CVMaker.Application.Features.Skills.Create
             {
                 await _unitOfWork.BeginTransactionAsync(cancellationToken);
 
-                var degreeExists = await _context.Degrees
+                var SkillExists = await _context.Skill
                     .AnyAsync(x => x.Description == request.Description, cancellationToken);
 
-                if (degreeExists)
+                if (SkillExists)
                 {
                     return Result.Failure(Error.Conflict(
                         "DegreeAlreadyExists",

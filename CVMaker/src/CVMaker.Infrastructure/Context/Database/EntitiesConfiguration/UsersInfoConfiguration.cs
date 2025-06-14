@@ -20,22 +20,6 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
             .HasDefaultValueSql("NEWID()")
             .HasColumnName("external_id");
 
-        builder.Property(e => e.AddressOne)
-            .HasMaxLength(500)
-            .HasColumnName("addressone");
-
-        builder.Property(e => e.AddressTwo)
-            .HasMaxLength(500)
-            .HasColumnName("addresstwo");
-
-        builder.Property(e => e.City)
-            .HasMaxLength(200)
-            .HasColumnName("city");
-
-        builder.Property(e => e.State)
-            .HasMaxLength(200)
-            .HasColumnName("state");
-
             builder.Property(e => e.Location)
             .HasMaxLength(500)
             .HasColumnName("location");
@@ -44,17 +28,6 @@ namespace CVMaker.Infrastructure.Context.EntitiesConfiguration
             .HasMaxLength(500)
             .HasColumnName("about");
 
-
-
-        builder.Property(e => e.ZipCode)
-            .HasMaxLength(50)
-            .HasColumnName("zipcode");
-
-        builder.Property(e => e.IsOver18)
-            .HasColumnName("isover18");
-
-        builder.Property(e => e.IsCitizen)
-            .HasColumnName("iscitizen");
 
         builder.Property(e => e.UserId)
             .HasColumnName("userid");

@@ -21,3 +21,15 @@ C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Domain\obj\Debug\net8.0\CVMaker.Do
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Domain\obj\Debug\net8.0\refint\CVMaker.Domain.dll
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Domain\obj\Debug\net8.0\CVMaker.Domain.pdb
 C:\Users\Admin\BaseDatos2\CVMaker\src\CVMaker.Domain\obj\Debug\net8.0\ref\CVMaker.Domain.dll
+C:\Users\liluc\Documents\BaseDatosIII\BaseDatosIII\CVMaker\src\CVMaker.Domain\bin\Debug\net8.0\CVMaker.Domain.deps.json
+C:\Users\liluc\Documents\BaseDatosIII\BaseDatosIII\CVMaker\src\CVMaker.Domain\bin\Debug\net8.0\CVMaker.Domain.dll
+C:\Users\liluc\Documents\BaseDatosIII\BaseDatosIII\CVMaker\src\CVMaker.Domain\bin\Debug\net8.0\CVMaker.Domain.pdb
+C:\Users\liluc\Documents\BaseDatosIII\BaseDatosIII\CVMaker\src\CVMaker.Domain\obj\Debug\net8.0\CVMaker.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\liluc\Documents\BaseDatosIII\BaseDatosIII\CVMaker\src\CVMaker.Domain\obj\Debug\net8.0\CVMaker.Domain.AssemblyInfoInputs.cache
+C:\Users\liluc\Documents\BaseDatosIII\BaseDatosIII\CVMaker\src\CVMaker.Domain\obj\Debug\net8.0\CVMaker.Domain.AssemblyInfo.cs
+C:\Users\liluc\Documents\BaseDatosIII\BaseDatosIII\CVMaker\src\CVMaker.Domain\obj\Debug\net8.0\CVMaker.Domain.csproj.CoreCompileInputs.cache
+C:\Users\liluc\Documents\BaseDatosIII\BaseDatosIII\CVMaker\src\CVMaker.Domain\obj\Debug\net8.0\CVMaker.Domain.sourcelink.json
+C:\Users\liluc\Documents\BaseDatosIII\BaseDatosIII\CVMaker\src\CVMaker.Domain\obj\Debug\net8.0\CVMaker.Domain.dll
+C:\Users\liluc\Documents\BaseDatosIII\BaseDatosIII\CVMaker\src\CVMaker.Domain\obj\Debug\net8.0\refint\CVMaker.Domain.dll
+C:\Users\liluc\Documents\BaseDatosIII\BaseDatosIII\CVMaker\src\CVMaker.Domain\obj\Debug\net8.0\CVMaker.Domain.pdb
+C:\Users\liluc\Documents\BaseDatosIII\BaseDatosIII\CVMaker\src\CVMaker.Domain\obj\Debug\net8.0\ref\CVMaker.Domain.dll

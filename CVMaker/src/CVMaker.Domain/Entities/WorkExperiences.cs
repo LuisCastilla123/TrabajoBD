@@ -34,7 +34,6 @@ namespace CVMaker.Domain.Entities
         public long WorkExperienceId { get; set; }
         public Guid ExternalId { get; set; } = Guid.NewGuid();
         public string EnterpriseName { get; set; }
-        public string Responsibilities { get; set; }
         public string Description { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }

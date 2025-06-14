@@ -28,8 +28,7 @@ namespace CVMaker. Infrastructure.Context.EntitiesConfiguration
             builder.Property(e => e.ExternalId)
                 .HasDefaultValueSql("NEWID()")
                 .HasColumnName("externalid");
-            builder.Property(e => e.Responsibilities).HasMaxLength(500)
-                .HasColumnName("responsibilities");
+          
             builder.Property(e => e.StartDate)
                 .HasColumnType("datetime2")
                 .HasColumnName("start_date");

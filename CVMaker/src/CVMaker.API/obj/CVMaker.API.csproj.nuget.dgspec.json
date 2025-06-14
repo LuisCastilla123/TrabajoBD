@@ -1,39 +1,45 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.API\\CVMaker.API.csproj": {}
+    "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.API\\CVMaker.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.API\\CVMaker.API.csproj": {
+    "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.API\\CVMaker.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.API\\CVMaker.API.csproj",
+        "projectUniqueName": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.API\\CVMaker.API.csproj",
         "projectName": "CVMaker.API",
-        "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.API\\CVMaker.API.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.API\\obj\\",
+        "projectPath": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.API\\CVMaker.API.csproj",
+        "packagesPath": "C:\\Users\\liluc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\liluc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Application\\CVMaker.Application.csproj": {
-                "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Application\\CVMaker.Application.csproj"
+              "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Application\\CVMaker.Application.csproj": {
+                "projectPath": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Application\\CVMaker.Application.csproj"
               },
-              "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Infrastructure\\CVMaker.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Infrastructure\\CVMaker.Infrastructure.csproj"
+              "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Infrastructure\\CVMaker.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Infrastructure\\CVMaker.Infrastructure.csproj"
               },
-              "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj": {
-                "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj"
+              "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj"
               }
             }
           }
@@ -47,7 +53,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -91,37 +98,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Application\\CVMaker.Application.csproj": {
+    "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Application\\CVMaker.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Application\\CVMaker.Application.csproj",
+        "projectUniqueName": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Application\\CVMaker.Application.csproj",
         "projectName": "CVMaker.Application",
-        "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Application\\CVMaker.Application.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Application\\obj\\",
+        "projectPath": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Application\\CVMaker.Application.csproj",
+        "packagesPath": "C:\\Users\\liluc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\liluc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Domain\\CVMaker.Domain.csproj": {
-                "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Domain\\CVMaker.Domain.csproj"
+              "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Domain\\CVMaker.Domain.csproj": {
+                "projectPath": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Domain\\CVMaker.Domain.csproj"
               },
-              "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj": {
-                "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj"
+              "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj": {
+                "projectPath": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj"
               }
             }
           }
@@ -135,7 +148,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -190,26 +204,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Domain\\CVMaker.Domain.csproj": {
+    "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Domain\\CVMaker.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Domain\\CVMaker.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Domain\\CVMaker.Domain.csproj",
         "projectName": "CVMaker.Domain",
-        "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Domain\\CVMaker.Domain.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Domain\\obj\\",
+        "projectPath": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Domain\\CVMaker.Domain.csproj",
+        "packagesPath": "C:\\Users\\liluc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\liluc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -227,7 +247,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -248,37 +269,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Infrastructure\\CVMaker.Infrastructure.csproj": {
+    "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Infrastructure\\CVMaker.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Infrastructure\\CVMaker.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Infrastructure\\CVMaker.Infrastructure.csproj",
         "projectName": "CVMaker.Infrastructure",
-        "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Infrastructure\\CVMaker.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Infrastructure\\CVMaker.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\liluc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\liluc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Application\\CVMaker.Application.csproj": {
-                "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Application\\CVMaker.Application.csproj"
+              "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Application\\CVMaker.Application.csproj": {
+                "projectPath": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Application\\CVMaker.Application.csproj"
               },
-              "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Domain\\CVMaker.Domain.csproj": {
-                "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.Domain\\CVMaker.Domain.csproj"
+              "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Domain\\CVMaker.Domain.csproj": {
+                "projectPath": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.Domain\\CVMaker.Domain.csproj"
               }
             }
           }
@@ -292,7 +319,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -333,26 +361,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj": {
+    "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj",
+        "projectUniqueName": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj",
         "projectName": "CVMaker.SharedKernel",
-        "projectPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\BaseDatos2\\CVMaker\\src\\CVMaker.SharedKernel\\obj\\",
+        "projectPath": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.SharedKernel\\CVMaker.SharedKernel.csproj",
+        "packagesPath": "C:\\Users\\liluc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\liluc\\Documents\\BaseDatosIII\\BaseDatosIII\\CVMaker\\src\\CVMaker.SharedKernel\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\liluc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -370,7 +404,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -391,7 +426,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

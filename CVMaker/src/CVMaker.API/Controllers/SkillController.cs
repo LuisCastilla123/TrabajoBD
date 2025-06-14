@@ -1,5 +1,6 @@
 using CVMaker.API.Extensions;
 using CVMaker.Application.Features.Degrees.Create;
+using CVMaker.Application.Features.Skills.Create;
 using CVMaker.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -21,7 +22,7 @@ namespace CVMaker.API.Controllers
         }
 
         [HttpPost("Create")]
-        public async Task<IActionResult> Create([FromBody] CreateDegreeCommand request)
+        public async Task<IActionResult> Create([FromBody] CreateSkillsCommand request)
         {
             var result = await _mediator.Send(request);
 

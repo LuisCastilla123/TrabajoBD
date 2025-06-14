@@ -610,24 +610,6 @@ namespace CVMaker.Infrastructure.Migrations
                         .HasColumnType("nvarchar(500)")
                         .HasColumnName("about");
 
-                    b.Property<string>("AddressOne")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)")
-                        .HasColumnName("addressone");
-
-                    b.Property<string>("AddressTwo")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)")
-                        .HasColumnName("addresstwo");
-
-                    b.Property<string>("City")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
-                        .HasColumnName("city");
-
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2")
                         .HasColumnName("createdat");
@@ -638,25 +620,11 @@ namespace CVMaker.Infrastructure.Migrations
                         .HasColumnName("external_id")
                         .HasDefaultValueSql("NEWID()");
 
-                    b.Property<bool>("IsCitizen")
-                        .HasColumnType("bit")
-                        .HasColumnName("iscitizen");
-
-                    b.Property<bool>("IsOver18")
-                        .HasColumnType("bit")
-                        .HasColumnName("isover18");
-
                     b.Property<string>("Location")
                         .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)")
                         .HasColumnName("location");
-
-                    b.Property<string>("State")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
-                        .HasColumnName("state");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2")
@@ -665,12 +633,6 @@ namespace CVMaker.Infrastructure.Migrations
                     b.Property<long>("UserId")
                         .HasColumnType("bigint")
                         .HasColumnName("userid");
-
-                    b.Property<string>("ZipCode")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
-                        .HasColumnName("zipcode");
 
                     b.HasKey("UserInfoId")
                         .HasName("users_info_pkey");
@@ -771,12 +733,6 @@ namespace CVMaker.Infrastructure.Migrations
                     b.Property<long?>("JobTitleId")
                         .HasColumnType("bigint")
                         .HasColumnName("jobtitleid");
-
-                    b.Property<string>("Responsibilities")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)")
-                        .HasColumnName("responsibilities");
 
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2")

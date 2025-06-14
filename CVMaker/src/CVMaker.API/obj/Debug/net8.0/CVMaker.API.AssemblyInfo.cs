@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CVMaker.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+742cb20bf8b0530c815f68533bea3242de5c63f6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+311ad67a46a1342df2a5e2e5793333db837cda0a")]
 [assembly: System.Reflection.AssemblyProductAttribute("CVMaker.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CVMaker.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

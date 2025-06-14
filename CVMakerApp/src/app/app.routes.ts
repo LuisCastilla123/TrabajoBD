@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { Login } from './presentation/login/login';
 import { SignIn } from './presentation/sign-in/sign-in';
-import { CV } from './presentation/cv/cv';
+import { Cv } from './presentation/cv/cv';
 
 export const routes: Routes = [
    {
@@ -11,5 +11,5 @@ export const routes: Routes = [
    },
    {path: 'login', component:Login}  ,
    {path: 'SignIn', component:SignIn},
-   {path: 'Cv', component: CV}
+   {path: 'cv', component: Cv}
 ];
